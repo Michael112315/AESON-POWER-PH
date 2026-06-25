@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty Registration | Aeson Power</title>
+  <meta name="description" content="Register or check your Aeson Power battery warranty. the Philippines' longest 30-month battery warranty — register in minutes.">
+  <link rel="icon" href="favicon.jfif" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="nav-logo">
+      <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/logo.webp" alt="Aeson Power" height="40">
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="nav-dropdown">
+        <a href="products.html" class="nav-dropdown-toggle">Products <i class="fas fa-chevron-down"></i></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="battery-finder.html">Battery Finder</a></li>
+          <li><a href="technology.html">Technology Overview</a></li>
+        </ul>
+      </li>
+      <li><a href="retail-partners.html">Retail Partners</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle">Support <i class="fas fa-chevron-down"></i></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="warranty.html">Warranty Registration</a></li>
+          <li><a href="roadside-assistance.html">Roadside Assistance</a></li>
+          <li><a href="faq.html">Support &amp; FAQs</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-warranty-reg-scaled.webp');"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Warranty Registration</span></nav>
+        <h1>Warranty Registration</h1>
+        <p>Register your Aeson Power battery to activate the Philippines' longest 30-month warranty — or check your existing coverage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARRANTY HIGHLIGHTS -->
+  <section class="section-sm" style="background:var(--primary);">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number">30</div>
+          <div class="stat-label">Month Coverage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">#1</div>
+          <div class="stat-label">Longest in Market</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><i class="fas fa-bolt" style="font-size:2rem;"></i></div>
+          <div class="stat-label">Fast Registration</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><i class="fas fa-shield-alt" style="font-size:2rem;"></i></div>
+          <div class="stat-label">Full Protection</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABS: REGISTER / CHECK -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:740px;margin:0 auto;" data-tabs class="reveal">
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="tab-register"><i class="fas fa-plus-circle"></i> Register Warranty</button>
+          <button class="tab-btn" data-tab="tab-check"><i class="fas fa-search"></i> Check Warranty</button>
+        </div>
+
+        <!-- REGISTER TAB -->
+        <div id="tab-register" class="tab-content active">
+          <div class="alert alert-info" style="margin-bottom:1.5rem;">
+            <i class="fas fa-info-circle" style="font-size:1.1rem;margin-top:2px;flex-shrink:0;"></i>
+            <span>Please have your battery serial number and proof of purchase ready before registering. Aeson Power reserves the right to assess vehicle type based on submitted images.</span>
+          </div>
+
+          <div id="warranty-success" style="display:none;" class="alert alert-success">
+            <i class="fas fa-check-circle" style="font-size:1.25rem;margin-top:1px;flex-shrink:0;"></i>
+            <div><strong>Warranty Registered Successfully!</strong><br>Your warranty has been submitted. You will receive a confirmation email within 1–2 business days. Keep your receipt for future reference.</div>
+          </div>
+
+          <form id="warranty-form" novalidate>
+            <h3 style="font-size:1.125rem;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--gray-200);">Battery Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="battery-model">Battery Model <span style="color:var(--accent);">*</span></label>
+                <select id="battery-model" class="form-control" required>
+                  <option value="">Select battery model</option>
+                  <option>NA-40B20L (NS40)</option>
+                  <option>NA-NS50L (55D23L/NS50)</option>
+                  <option>NA-60B24L (NS60)</option>
+                  <option>NA-NS70L (NS70)</option>
+                  <option>H5/L2-400L (DIN55L)</option>
+                  <option>D31L (95D31L/NX120-7L)</option>
+                  <option>M42L</option>
+                  <option>Q85L-SS (Q85)</option>
+                  <option>S95L-SS (S95)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="serial-number">Serial Number <span style="color:var(--accent);">*</span></label>
+                <input type="text" id="serial-number" class="form-control" placeholder="e.g. AP2025-XXXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="purchase-date">Purchase Date <span style="color:var(--accent);">*</span></label>
+                <input type="date" id="purchase-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="dealer-name">Dealer / Shop Name <span style="color:var(--accent);">*</span></label>
+                <input type="text" id="dealer-name" class="form-control" placeholder="Where did you buy it?" required>
+              </div>
+            </div>
+
+            <h3 style="font-size:1.125rem;margin:1.75rem 0 1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--gray-200);">Vehicle Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="vehicle-plate">Vehicle Plate Number <span style="color:var(--accent);">*</span></label>
+                <input type="text" id="vehicle-plate" class="form-control" placeholder="e.g. WXX 1234" required>
+                <p class="form-hint">Enter your vehicle registration number exactly as shown on your road tax.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vehicle-make">Car Make <span style="color:var(--accent);">*</span></label>
+                <input type="text" id="vehicle-make" class="form-control" placeholder="e.g. Perodua" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vehicle-model">Car Model <span style="color:var(--accent);">*</span></label>
+                <input type="text" id="vehicle-model" class="form-control" placeholder="e.g. Myvi" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vehicle-year">Year <span style="color:var(--accent);">*</span></label>
+                <input type="number" id="vehicle-year" class="form-control" placeholder="e.g. 2022" min="1990" max="2030" required>
+              </div>
+            </div>
+
+            <h3 style="font-size:1.125rem;margin:1.75rem 0 1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--gray-200);">Owner Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="owner-name">Full Name <span style="color:var(--accent);">*</span></label>
+                <input type="text" id="owner-name" class="form-control" placeholder="As per IC / Passport" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="owner-phone">Phone Number <span style="color:var(--accent);">*</span></label>
+                <input type="tel" id="owner-phone" class="form-control" placeholder="e.g. 012-345 6789" required>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <label class="form-label" for="owner-email">Email Address <span style="color:var(--accent);">*</span></label>
+                <input type="email" id="owner-email" class="form-control" placeholder="your@email.com" required>
+                <p class="form-hint">Your warranty confirmation will be sent to this email address.</p>
+              </div>
+            </div>
+
+            <h3 style="font-size:1.125rem;margin:1.75rem 0 1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--gray-200);">Supporting Documents</h3>
+            <div class="form-group">
+              <label class="form-label" for="receipt-upload">Proof of Purchase (Receipt) <span style="color:var(--accent);">*</span></label>
+              <div style="border:2px dashed var(--gray-200);border-radius:var(--radius);padding:2rem;text-align:center;cursor:pointer;transition:var(--transition);" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--gray-200)'">
+                <i class="fas fa-cloud-upload-alt" style="font-size:2rem;color:var(--gray-300);margin-bottom:.75rem;display:block;"></i>
+                <p style="color:var(--text-muted);font-size:.9375rem;margin-bottom:.5rem;">Drag &amp; drop your receipt here, or <label for="receipt-upload" style="color:var(--accent);cursor:pointer;font-weight:600;">browse</label></p>
+                <p style="font-size:.8125rem;color:var(--text-light);">Accepted: JPG, PNG, PDF — Max 5 MB</p>
+                <input type="file" id="receipt-upload" style="display:none;" accept=".jpg,.jpeg,.png,.pdf">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="vehicle-photo">Vehicle Photo <span style="color:var(--accent);">*</span></label>
+              <div style="border:2px dashed var(--gray-200);border-radius:var(--radius);padding:2rem;text-align:center;cursor:pointer;transition:var(--transition);" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--gray-200)'">
+                <i class="fas fa-camera" style="font-size:2rem;color:var(--gray-300);margin-bottom:.75rem;display:block;"></i>
+                <p style="color:var(--text-muted);font-size:.9375rem;margin-bottom:.5rem;">Upload a clear photo of your vehicle, or <label for="vehicle-photo" style="color:var(--accent);cursor:pointer;font-weight:600;">browse</label></p>
+                <p style="font-size:.8125rem;color:var(--text-light);">Must be clear, complete, and not blurred — JPG or PNG</p>
+                <input type="file" id="vehicle-photo" style="display:none;" accept=".jpg,.jpeg,.png">
+              </div>
+            </div>
+
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:.75rem;margin-top:.5rem;">
+              <input type="checkbox" id="terms-agree" style="margin-top:3px;width:16px;height:16px;accent-color:var(--accent);flex-shrink:0;" required>
+              <label for="terms-agree" style="font-size:.9375rem;color:var(--text-muted);cursor:pointer;">I confirm that all information provided is accurate and I agree to the <a href="#" style="color:var(--accent);">Warranty Terms &amp; Conditions</a>. I understand that Aeson Power reserves the right to assess and determine the vehicle type based on submitted images.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-full" style="justify-content:center;margin-top:1.5rem;">
+              <i class="fas fa-shield-alt"></i> Register My Warranty
+            </button>
+          </form>
+        </div>
+
+        <!-- CHECK TAB -->
+        <div id="tab-check" class="tab-content">
+          <p style="color:var(--text-muted);margin-bottom:2rem;">Enter your vehicle registration number to check the status of your Aeson Power warranty.</p>
+
+          <form id="warranty-check-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="plate-number">Vehicle Plate Number</label>
+              <div style="display:flex;gap:.75rem;">
+                <input type="text" id="plate-number" class="form-control" placeholder="e.g. WXX 1234" style="flex:1;" required>
+                <button type="submit" class="btn btn-primary" style="flex-shrink:0;"><i class="fas fa-search"></i> Check</button>
+              </div>
+              <p class="form-hint">Enter the vehicle registration number linked to your warranty registration.</p>
+            </div>
+          </form>
+
+          <div id="warranty-check-result" style="display:none;margin-top:1rem;"></div>
+
+          <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:1.5rem;margin-top:2rem;">
+            <h4 style="margin-bottom:.75rem;font-size:1rem;">Need more help?</h4>
+            <p style="color:var(--text-muted);font-size:.9375rem;margin-bottom:1rem;">For detailed warranty enquiries, replacement requests, or claims, please contact our support team directly.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+              <a href="mailto:info@aesonpower.com.ph" class="btn btn-outline-dark btn-sm"><i class="fas fa-envelope"></i> Email Support</a>
+              <a href="https://wa.me/639273179178" class="btn btn-outline-dark btn-sm"><i class="fas fa-phone"></i> +63 927 317 9178</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end tabs wrapper -->
+    </div>
+  </section>
+
+  <!-- WARRANTY TERMS SUMMARY -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header center reveal">
+        <span class="section-label">What's Covered</span>
+        <h2 class="section-title">Warranty Terms Summary</h2>
+        <p class="section-subtitle">Your 30-month warranty covers manufacturing defects and premature failure under normal operating conditions.</p>
+      </div>
+      <div class="grid-3 reveal">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>What Is Covered</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.625rem;margin-top:.75rem;">
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-check" style="color:#16a34a;margin-top:3px;flex-shrink:0;"></i> Manufacturing defects</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-check" style="color:#16a34a;margin-top:3px;flex-shrink:0;"></i> Premature capacity loss</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-check" style="color:#16a34a;margin-top:3px;flex-shrink:0;"></i> Terminal defects</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-check" style="color:#16a34a;margin-top:3px;flex-shrink:0;"></i> Internal short circuit</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-check" style="color:#16a34a;margin-top:3px;flex-shrink:0;"></i> Casing defects (factory origin)</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(220,38,38,.1);color:#dc2626;"><i class="fas fa-times-circle"></i></div>
+          <h3>What Is Not Covered</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.625rem;margin-top:.75rem;">
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-times" style="color:#dc2626;margin-top:3px;flex-shrink:0;"></i> Physical damage or misuse</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-times" style="color:#dc2626;margin-top:3px;flex-shrink:0;"></i> Incorrect installation</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-times" style="color:#dc2626;margin-top:3px;flex-shrink:0;"></i> Overcharging by faulty alternator</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-times" style="color:#dc2626;margin-top:3px;flex-shrink:0;"></i> Normal wear and ageing</li>
+            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.9375rem;color:var(--text-muted);"><i class="fas fa-times" style="color:#dc2626;margin-top:3px;flex-shrink:0;"></i> Unregistered batteries</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(21,101,192,.1);color:#1565C0;"><i class="fas fa-file-alt"></i></div>
+          <h3>How to Make a Claim</h3>
+          <ol style="list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-top:.75rem;counter-reset:steps;">
+            <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.9375rem;color:var(--text-muted);">
+              <span style="min-width:22px;height:22px;background:var(--primary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px;">1</span>
+              Contact the dealer where you purchased the battery
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.9375rem;color:var(--text-muted);">
+              <span style="min-width:22px;height:22px;background:var(--primary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px;">2</span>
+              Bring your battery, receipt, and vehicle registration
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.9375rem;color:var(--text-muted);">
+              <span style="min-width:22px;height:22px;background:var(--primary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px;">3</span>
+              Dealer submits claim to Aeson Power for assessment
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.9375rem;color:var(--text-muted);">
+              <span style="min-width:22px;height:22px;background:var(--primary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px;">4</span>
+              Approved claims receive free replacement battery
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/logo.webp" alt="Aeson Power">
+        <p>Redesigning the Road Ahead, Powered By Sodium-ion. the Philippines' next-generation automotive battery solution.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="battery-finder.html">Battery Finder</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="warranty.html">Warranty Registration</a></li>
+          <li><a href="retail-partners.html">Retail Partners</a></li>
+          <li><a href="roadside-assistance.html">Roadside Assistance</a></li>
+          <li><a href="faq.html">Support &amp; FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-info">
+          
+          <div class="footer-contact-row"><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/BetterBatteriesBacolod" target="_blank" rel="noopener">Better Batteries Bacolod</a></div><div class="footer-contact-row"><i class="fab fa-whatsapp"></i><a href="https://wa.me/639273179178">+63 927 317 9178</a> <span style="color:var(--text-light);font-size:.8rem;">(Viber / WhatsApp)</span></div>
+          <div class="footer-contact-row"><i class="fas fa-envelope"></i><a href="mailto:info@aesonpower.com.ph">info@aesonpower.com.ph</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aeson Power Philippines. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

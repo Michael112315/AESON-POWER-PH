@@ -1,2 +1,2 @@
-# AESON-POWER-PH
-AesonPower website
+# aeson-power-ph
+Aeson Power PH website
