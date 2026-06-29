@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               <div className="footer-contact-row">
                 <i className="fas fa-envelope" />
-                <a href="mailto:info@aesonpower.com.ph">info@aesonpower.com.ph</a>
+                <a href="mailto:sales@aeson.com.ph">sales@aeson.com.ph</a>
               </div>
             </div>
           </div>
