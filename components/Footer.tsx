@@ -61,13 +61,9 @@ export default function Footer() {
                   <span style={{ color: 'var(--text-light)', fontSize: '.8rem' }}>(Viber / WhatsApp)</span>
                 </span>
               </div>
-            <div className="footer-contact-row">
+<div className="footer-contact-row">
   <i className="fas fa-envelope" />
-  <a
-    href="https://hpanel.hostinger.com/emails"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  <a href="mailto:sales@aesonpower.com.ph">
     sales@aesonpower.com.ph
   </a>
 </div>
