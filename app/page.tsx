@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: "url('public/Front 30months.webp')" }}></div>
+        <div className="hero-bg" style={{ backgroundImage: "url('https://cms.aesonpower.com.my/wp-content/uploads/2025/08/hero-image-29-aug.webp')" }}></div>
         <div className="container">
           <div className="hero-content">
             <div className="hero-label">Next-Generation Battery Technology</div>
