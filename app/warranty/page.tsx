@@ -204,25 +204,7 @@ export default function WarrantyPage() {
                     </div>
                   </div>
 
-                  <h3 style={{ fontSize: '1.125rem', margin: '1.75rem 0 1.25rem', paddingBottom: '.75rem', borderBottom: '1px solid var(--gray-200)' }}>Supporting Documents</h3>
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="receipt-upload">Proof of Purchase (Receipt) <span style={{ color: 'var(--accent)' }}>*</span></label>
-                    <div style={{ border: '2px dashed var(--gray-200)', borderRadius: 'var(--radius)', padding: '2rem', textAlign: 'center', cursor: 'pointer', transition: 'var(--transition)' }}>
-                      <i className="fas fa-cloud-upload-alt" style={{ fontSize: '2rem', color: 'var(--gray-300)', marginBottom: '.75rem', display: 'block' }}></i>
-                      <p style={{ color: 'var(--text-muted)', fontSize: '.9375rem', marginBottom: '.5rem' }}>Drag &amp; drop your receipt here, or <label htmlFor="receipt-upload" style={{ color: 'var(--accent)', cursor: 'pointer', fontWeight: 600 }}>browse</label></p>
-                      <p style={{ fontSize: '.8125rem', color: 'var(--text-light)' }}>Accepted: JPG, PNG, PDF — Max 5 MB</p>
-                      <input type="file" id="receipt-upload" name="receipt" style={{ display: 'none' }} accept=".jpg,.jpeg,.png,.pdf" />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="vehicle-photo">Vehicle Photo <span style={{ color: 'var(--accent)' }}>*</span></label>
-                    <div style={{ border: '2px dashed var(--gray-200)', borderRadius: 'var(--radius)', padding: '2rem', textAlign: 'center', cursor: 'pointer', transition: 'var(--transition)' }}>
-                      <i className="fas fa-camera" style={{ fontSize: '2rem', color: 'var(--gray-300)', marginBottom: '.75rem', display: 'block' }}></i>
-                      <p style={{ color: 'var(--text-muted)', fontSize: '.9375rem', marginBottom: '.5rem' }}>Upload a clear photo of your vehicle, or <label htmlFor="vehicle-photo" style={{ color: 'var(--accent)', cursor: 'pointer', fontWeight: 600 }}>browse</label></p>
-                      <p style={{ fontSize: '.8125rem', color: 'var(--text-light)' }}>Must be clear, complete, and not blurred — JPG or PNG</p>
-                      <input type="file" id="vehicle-photo" name="vehicle_photo" style={{ display: 'none' }} accept=".jpg,.jpeg,.png" />
-                    </div>
-                  </div>
+                  
 
                   <div className="form-group" style={{ display: 'flex', alignItems: 'flex-start', gap: '.75rem', marginTop: '.5rem' }}>
                     <input type="checkbox" id="terms-agree" name="terms_agree" style={{ marginTop: '3px', width: '16px', height: '16px', accentColor: 'var(--accent)', flexShrink: 0 }} required />
