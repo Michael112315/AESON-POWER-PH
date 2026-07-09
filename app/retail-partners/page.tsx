@@ -5,41 +5,243 @@ export const metadata: Metadata = {
   title: 'Retail Partners',
 }
 
+const dealers = [
+  {
+    name: "KENPRO / BETTER BATTERIES BACOLOD",
+    address: "Luxur Place, Magsaysay Avenue, Singcang, Bacolod City, Negros Occidental",
+    phone: "+639273179178",
+  },
+  {
+    name: "Jas Auto Parts Gen. Merchandise",
+    address: "Door 13-14 Village Center Building, Avenida Veteranos, Tacloban City",
+    phone: "+639175978223",
+  },
+  {
+    name: "Ilo-Ilo Auto Supply",
+    address: "Corner Ledesma Street, Valeria Street, Iloilo City, Iloilo, Philippines",
+    phone: "+639173030300",
+  },
+  {
+    name: "One Auto Supply",
+    address: "Brgy. Banica, Roxas City 5800, Philippines",
+    phone: "+639189442470",
+  },
+]
+
 export default function RetailPartnersPage() {
   return (
     <>
+      {/* Hero */}
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: "url('https://cms.aesonpower.com.my/wp-content/uploads/2025/07/cta-bg-1-scaled.webp')" }}></div>
+        <div
+          className="page-hero-bg"
+          style={{
+            backgroundImage:
+              "url('https://cms.aesonpower.com.my/wp-content/uploads/2025/07/cta-bg-1-scaled.webp')",
+          }}
+        ></div>
+
         <div className="container">
           <div className="page-hero-content">
-            <nav className="breadcrumb"><Link href="/">Home</Link><span>/</span><span className="current">Retail Partners</span></nav>
+            <nav className="breadcrumb">
+              <Link href="/">Home</Link>
+              <span>/</span>
+              <span className="current">Retail Partners</span>
+            </nav>
+
             <h1>Retail Partners</h1>
-            <p>Find an authorised Aeson Power dealer near you across the Philippines.</p>
+
+            <p>
+              Find an authorised Aeson Power dealer near you across the
+              Philippines.
+            </p>
           </div>
         </div>
       </section>
 
+      {/* Dealers */}
       <section className="section">
         <div className="container">
 
-          {/* Coming soon placeholder */}
-          <div style={{ textAlign: 'center', padding: '5rem 2rem' }} className="reveal">
-            <div style={{ width: '72px', height: '72px', background: 'var(--gray-100)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', color: 'var(--gray-400)', margin: '0 auto 1.5rem' }}>
-              <i className="fas fa-map-marker-alt"></i>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(330px,1fr))",
+              gap: "2rem",
+            }}
+          >
+            {dealers.map((dealer, index) => (
+              <div
+                key={index}
+                className="reveal"
+                style={{
+                  background: "#fff",
+                  borderRadius: "18px",
+                  padding: "2rem",
+                  boxShadow: "0 10px 25px rgba(0,0,0,.08)",
+                  transition: ".3s",
+                  textAlign: "center",
+                }}
+              >
+                {/* Store Icon / Logo */}
+                <div
+                  style={{
+                    width: "90px",
+                    height: "90px",
+                    margin: "0 auto 20px",
+                    borderRadius: "50%",
+                    background: "rgba(232,119,34,.1)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#E87722",
+                    fontSize: "34px",
+                  }}
+                >
+                  <i className="fas fa-store"></i>
+                </div>
+
+                <h3
+                  style={{
+                    fontSize: "1.25rem",
+                    marginBottom: ".8rem",
+                    color: "var(--text)",
+                  }}
+                >
+                  {dealer.name}
+                </h3>
+
+                <p
+                  style={{
+                    color: "var(--text-muted)",
+                    marginBottom: "1rem",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  <i
+                    className="fas fa-map-marker-alt"
+                    style={{ color: "#E87722" }}
+                  ></i>
+                  <br />
+                  {dealer.address}
+                </p>
+
+                <p style={{ marginBottom: "1.5rem" }}>
+                  <i
+                    className="fas fa-phone"
+                    style={{ color: "#E87722" }}
+                  ></i>{" "}
+                  <a
+                    href={`tel:${dealer.phone}`}
+                    style={{
+                      color: "inherit",
+                      textDecoration: "none",
+                      fontWeight: 600,
+                    }}
+                  >
+                    {dealer.phone}
+                  </a>
+                </p>
+
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: ".6rem",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  {/* Google Maps */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                      dealer.address
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    <i className="fas fa-map-marker-alt"></i> Map
+                  </a>
+
+                  {/* WhatsApp */}
+                  <a
+                    href={`https://wa.me/${dealer.phone.replace("+", "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-secondary"
+                  >
+                    <i className="fab fa-whatsapp"></i> WhatsApp
+                  </a>
+
+                  {/* Viber */}
+                  <a
+                    href={`viber://chat?number=${dealer.phone}`}
+                    className="btn btn-secondary"
+                  >
+                    <i className="fab fa-viber"></i> Viber
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Become Dealer */}
+
+          <div
+            style={{
+              background: "var(--gray-50)",
+              borderRadius: "var(--radius-lg)",
+              padding: "3rem",
+              textAlign: "center",
+              marginTop: "5rem",
+            }}
+            className="reveal"
+          >
+            <div
+              style={{
+                width: "60px",
+                height: "60px",
+                background: "rgba(232,119,34,.1)",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1.5rem",
+                color: "var(--accent)",
+                margin: "0 auto 1.25rem",
+              }}
+            >
+              <i className="fas fa-handshake"></i>
             </div>
-            <h3 style={{ fontSize: '1.375rem', marginBottom: '.75rem', color: 'var(--text)' }}>Dealer Locations Coming Soon</h3>
-            <p style={{ color: 'var(--text-muted)', maxWidth: '480px', margin: '0 auto 2rem' }}>We&apos;re building our authorised dealer network across the Philippines. Check back soon or get in touch to find out when a dealer will be available near you.</p>
-            <a href="mailto:info@aesonpower.com.ph" className="btn btn-primary"><i className="fas fa-envelope"></i> Contact Us</a>
-          </div>
 
-          {/* Become a partner */}
-          <div style={{ background: 'var(--gray-50)', borderRadius: 'var(--radius-lg)', padding: '3rem', textAlign: 'center', marginTop: '4rem' }} className="reveal">
-            <div style={{ width: '60px', height: '60px', background: 'rgba(232,119,34,.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', color: 'var(--accent)', margin: '0 auto 1.25rem' }}><i className="fas fa-handshake"></i></div>
-            <h2 style={{ fontSize: '1.5rem', marginBottom: '.75rem' }}>Become an Authorised Dealer</h2>
-            <p style={{ color: 'var(--text-muted)', maxWidth: '560px', margin: '0 auto 2rem' }}>Interested in carrying Aeson Power sodium-ion batteries at your shop? We&apos;re actively expanding our dealer network across the Philippines. Contact us to learn about partnership opportunities.</p>
-            <a href="mailto:info@aesonpower.com.ph" className="btn btn-primary">Enquire About Dealership</a>
-          </div>
+            <h2
+              style={{
+                fontSize: "1.6rem",
+                marginBottom: ".75rem",
+              }}
+            >
+              Become an Authorised Dealer
+            </h2>
 
+            <p
+              style={{
+                color: "var(--text-muted)",
+                maxWidth: "560px",
+                margin: "0 auto 2rem",
+              }}
+            >
+              Interested in carrying Aeson Power sodium-ion batteries at your
+              shop? We're actively expanding our dealer network across the
+              Philippines. Contact us to learn about partnership opportunities.
+            </p>
+
+            <a
+              href="mailto:info@aesonpower.com.ph"
+              className="btn btn-primary"
+            >
+              Enquire About Dealership
+            </a>
+          </div>
         </div>
       </section>
     </>
