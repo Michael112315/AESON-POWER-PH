@@ -1,9 +1,7 @@
 
+
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-
-
-
 
 const VALID_BATTERY_MODELS = new Set([
   'NA-40B20L (NS40)',
@@ -100,7 +98,7 @@ export async function POST(req: NextRequest) {
       vehicleYear > 2030
     ) {
       return NextResponse.json(
-        { : 'Vehicle year must be between 1990 and 2030.' },
+        { error: 'Vehicle year must be between 1990 and 2030.' },
         { status: 400 }
       )
     }
