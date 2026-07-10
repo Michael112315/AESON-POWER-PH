@@ -10,7 +10,7 @@ export default function HomePage() {
           <div className="hero-content">
             <div className="hero-label">Next-Generation Battery Technology</div>
             <h1>Redesigning the <span>Road Ahead,</span> Powered By Sodium-ion</h1>
-            <p style={{ color: 'rgba(255,255,255,.8)', marginBottom: '2rem' }}>Experience safety, efficiency, and confidence with the Philippines&apos; most advanced automotive battery — backed by a 24-month full replacement or a 30-month prorated warranty.</p>
+            <p style={{ color: 'rgba(255,255,255,.8)', marginBottom: '2rem' }}>Experience safety, efficiency, and confidence with the Philippines&apos; most advanced automotive battery — backed by a 30-month warranty.</p>
             <div className="hero-cta">
               <Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find Your Battery</Link>
               <Link href="/products" className="btn btn-outline btn-lg">View Products</Link>
