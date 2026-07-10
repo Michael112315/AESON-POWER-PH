@@ -1,7 +1,9 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
 
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 const VALID_BATTERY_MODELS = new Set([
   'NA-40B20L (NS40)',
@@ -98,7 +100,7 @@ export async function POST(req: NextRequest) {
       vehicleYear > 2030
     ) {
       return NextResponse.json(
-        { error: 'Vehicle year must be between 1990 and 2030.' },
+        { : 'Vehicle year must be between 1990 and 2030.' },
         { status: 400 }
       )
     }
@@ -164,6 +166,68 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       )
     }
+
+    // Send notification email to AESON staff
+await resend.emails.send({
+  from: 'AESON Power <sales@aesonpower.com.ph>',
+
+  to: [
+    'sales@aesonpower.com.ph',
+    'admin@aesonpower.com.ph',
+  ],
+
+  subject: 'New AESON Warranty Registration',
+
+  html: `
+    <h2>New Warranty Registration</h2>
+
+    <h3>Battery Information</h3>
+
+    <p><strong>Battery Model:</strong> ${batteryModel}</p>
+    <p><strong>Serial Number:</strong> ${serialNumber}</p>
+    <p><strong>Purchase Date:</strong> ${purchaseDate}</p>
+    <p><strong>Dealer Name:</strong> ${dealerName}</p>
+
+    <hr>
+
+    <h3>Vehicle Information</h3>
+
+    <p><strong>Plate Number:</strong> ${vehiclePlate}</p>
+    <p><strong>Vehicle Make:</strong> ${vehicleMake}</p>
+    <p><strong>Vehicle Model:</strong> ${vehicleModel}</p>
+    <p><strong>Vehicle Year:</strong> ${vehicleYear}</p>
+
+    <hr>
+
+    <h3>Owner Information</h3>
+
+    <p><strong>Name:</strong> ${ownerName}</p>
+    <p><strong>Email:</strong> ${ownerEmail}</p>
+    <p><strong>Phone:</strong> ${ownerPhone}</p>
+  `,
+})
+
+// Send confirmation email to customer
+await resend.emails.send({
+   from: 'AESON Power <sales@aesonpower.com.ph>',
+
+  to: ownerEmail,
+
+  subject: 'Warranty Registration Received - AESON Power',
+
+  html: `
+    <h2>Thank you for registering your AESON Power Battery!</h2>
+
+    <p>Dear ${ownerName},</p>
+
+    <p>We have successfully received your warranty registration.</p>
+
+    <p><strong>Battery Model:</strong> ${batteryModel}</p>
+    <p><strong>Serial Number:</strong> ${serialNumber}</p>
+
+    <p>Thank you for choosing AESON Power.</p>
+  `,
+})
 
     return NextResponse.json({
       success: true,
