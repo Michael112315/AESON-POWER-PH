@@ -2,6 +2,90 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import { Resend } from 'resend'
 
+await resend.emails.send({
+  from: 'onboarding@resend.dev',
+
+  to: [
+    'sales@aesonpower.com.ph',
+    'admin@aesonpower.com.ph',
+  ],
+
+  subject: 'New AESON Warranty Registration',
+
+  html: `
+    <h2>New Warranty Registration</h2>
+
+    <h3>Battery Information</h3>
+
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;">
+      <tr>
+        <td><strong>Battery Model</strong></td>
+        <td>${batteryModel}</td>
+      </tr>
+      <tr>
+        <td><strong>Serial Number</strong></td>
+        <td>${serialNumber}</td>
+      </tr>
+      <tr>
+        <td><strong>Purchase Date</strong></td>
+        <td>${purchaseDate}</td>
+      </tr>
+      <tr>
+        <td><strong>Dealer Name</strong></td>
+        <td>${dealerName}</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h3>Vehicle Information</h3>
+
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;">
+      <tr>
+        <td><strong>Plate Number</strong></td>
+        <td>${vehiclePlate}</td>
+      </tr>
+      <tr>
+        <td><strong>Vehicle Make</strong></td>
+        <td>${vehicleMake}</td>
+      </tr>
+      <tr>
+        <td><strong>Vehicle Model</strong></td>
+        <td>${vehicleModel}</td>
+      </tr>
+      <tr>
+        <td><strong>Vehicle Year</strong></td>
+        <td>${vehicleYear}</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h3>Owner Information</h3>
+
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;">
+      <tr>
+        <td><strong>Name</strong></td>
+        <td>${ownerName}</td>
+      </tr>
+      <tr>
+        <td><strong>Email</strong></td>
+        <td>${ownerEmail}</td>
+      </tr>
+      <tr>
+        <td><strong>Phone</strong></td>
+        <td>${ownerPhone}</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <p>This warranty registration was submitted from the AESON Power website.</p>
+  `,
+})
+
+
+
 const VALID_BATTERY_MODELS = new Set([
   'NA-40B20L (NS40)',
   'NA-NS50L (55D23L/NS50)',
