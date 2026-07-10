@@ -156,7 +156,7 @@ export default function HomePage() {
           <div className="grid-split reveal">
             <div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-product-compare-scaled.webp" alt="Battery comparison" style={{ borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
+              <img src="http://aesonpower.com.ph/wp-content/uploads/2026/07/Front-4.webp" alt="Battery comparison" style={{ borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-lg)', width: '100%' }} />
             </div>
             <div style={{ overflowX: 'auto' }}>
               <table className="comparison-table">
