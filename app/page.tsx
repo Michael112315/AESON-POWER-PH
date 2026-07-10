@@ -84,7 +84,7 @@ export default function HomePage() {
         <div className="benefit-section">
           <div className="benefit-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-product-benefit-1-scaled.webp" alt="Lightweight sodium-ion battery" />
+            <img src="http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Front-1.webp" alt="Lightweight sodium-ion battery" />
           </div>
           <div className="benefit-content" style={{ background: 'var(--white)' }}>
             <div className="reveal">
