@@ -118,7 +118,7 @@ export default function HomePage() {
           </div>
           <div className="benefit-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-product-benefit-2-scaled.webp" alt="Long lasting battery" />
+            <img src="http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Front-3.webp" alt="Long lasting battery" />
           </div>
         </div>
       </section>
@@ -128,7 +128,7 @@ export default function HomePage() {
         <div className="benefit-section">
           <div className="benefit-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-product-benefit-3-scaled.webp" alt="Safe battery technology" />
+            <img src="http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Front-2.webp" alt="Safe battery technology" />
           </div>
           <div className="benefit-content" style={{ background: 'var(--white)' }}>
             <div className="reveal">
