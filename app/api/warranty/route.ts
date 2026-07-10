@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
 
 const VALID_BATTERY_MODELS = new Set([
   'NA-40B20L (NS40)',
