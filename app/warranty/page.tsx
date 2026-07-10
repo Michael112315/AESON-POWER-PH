@@ -113,19 +113,42 @@ export default function WarrantyPage() {
             </div>
 
             {/* REGISTER TAB */}
-            {activeTab === 'register' && (
-             <div>
-                <div className="alert alert-info" style={{ marginBottom: '1.5rem' }}>
-                  <i className="fas fa-info-circle" style={{ fontSize: '1.1rem', marginTop: '2px', flexShrink: 0 }}></i>
-                  <span>Please have your battery serial number and proof of purchase ready before registering. Aeson Power reserves the right to assess vehicle type based on submitted images.</span>
-                </div>
+           {activeTab === 'register' && (
+  <div>
 
-                {success && (
-                  <div className="alert alert-success" style={{ marginBottom: '1.5rem' }}>
-                    <i className="fas fa-check-circle" style={{ fontSize: '1.25rem', marginTop: '1px', flexShrink: 0 }}></i>
-                    <div><strong>Warranty Registered Successfully!</strong><br />Your warranty has been submitted. You will receive a confirmation email within 1–2 business days. Keep your receipt for future reference.</div>
-                  </div>
-                )}
+    {success && (
+      <div className="alert alert-success" style={{ marginBottom: '1.5rem' }}>
+        <i
+          className="fas fa-check-circle"
+          style={{
+            fontSize: '1.25rem',
+            marginTop: '1px',
+            flexShrink: 0,
+          }}
+        ></i>
+        <div>
+          <strong>Warranty Registered Successfully!</strong>
+          <br />
+          Your warranty has been submitted. You will receive a confirmation
+          email within 1–2 business days. Keep your receipt for future
+          reference.
+        </div>
+      </div>
+    )}
+
+    {error && (
+      <div className="alert alert-error" style={{ marginBottom: '1.5rem' }}>
+        <i
+          className="fas fa-exclamation-circle"
+          style={{
+            fontSize: '1.1rem',
+            marginTop: '2px',
+            flexShrink: 0,
+          }}
+        ></i>
+        <span>{error}</span>
+      </div>
+    )}
 
                 {error && (
                   <div className="alert alert-error" style={{ marginBottom: '1.5rem' }}>
