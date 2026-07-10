@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-import { rateLimit } from '@/lib/rate-limit'
 
 const VALID_BATTERY_MODELS = new Set([
   'NA-40B20L (NS40)',
@@ -26,15 +25,6 @@ function str(formData: FormData, key: string): string {
 }
 
 export async function POST(req: NextRequest) {
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0] ?? 'unknown'
-
-  if (!rateLimit(`warranty-register:${ip}`, 5, 15 * 60 * 1000)) {
-    return NextResponse.json(
-      { error: 'Too many requests. Please try again later.' },
-      { status: 429 },
-    )
-  }
-
   try {
     const formData = await req.formData()
 
@@ -111,7 +101,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    if (!/^[a-zA-Z0-9 \-]{3,15}$/.test(vehiclePlate)) {
+    if (!/^[a-zA-Z0-9 -]{3,15}$/.test(vehiclePlate)) {
       return NextResponse.json(
         { error: 'Invalid plate number format.' },
         { status: 400 }
@@ -158,6 +148,8 @@ export async function POST(req: NextRequest) {
       })
 
     if (error) {
+      console.error('Supabase insert error:', error)
+
       if (error.code === '23505') {
         return NextResponse.json(
           { error: 'This serial number is already registered.' },
@@ -165,10 +157,8 @@ export async function POST(req: NextRequest) {
         )
       }
 
-      console.error('Supabase insert error:', error)
-
       return NextResponse.json(
-        { error: 'Failed to register warranty.' },
+        { error: error.message },
         { status: 500 }
       )
     }
@@ -182,7 +172,9 @@ export async function POST(req: NextRequest) {
     console.error('Warranty API error:', err)
 
     return NextResponse.json(
-      { error: 'Internal server error.' },
+      {
+        error: err instanceof Error ? err.message : 'Internal server error.',
+      },
       { status: 500 }
     )
   }
