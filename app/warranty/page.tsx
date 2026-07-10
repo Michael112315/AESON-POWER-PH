@@ -114,7 +114,11 @@ export default function WarrantyPage() {
 
             {/* REGISTER TAB */}
             {activeTab === 'register' && (
-             
+             <div>
+                <div className="alert alert-info" style={{ marginBottom: '1.5rem' }}>
+                  <i className="fas fa-info-circle" style={{ fontSize: '1.1rem', marginTop: '2px', flexShrink: 0 }}></i>
+                  <span>Please have your battery serial number and proof of purchase ready before registering. Aeson Power reserves the right to assess vehicle type based on submitted images.</span>
+                </div>
 
                 {success && (
                   <div className="alert alert-success" style={{ marginBottom: '1.5rem' }}>
