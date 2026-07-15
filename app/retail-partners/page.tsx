@@ -9,6 +9,7 @@ const dealers = [
   {
      city: "Bacolod",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Kenpro-Logo-.webp",
     stores: 1,
     name: "KENPRO / BETTER BATTERIES BACOLOD",
     address:
@@ -151,19 +152,29 @@ export default function RetailPartnersPage() {
     {/* Store Icon */}
     <div
       style={{
-        width: "70px",
-        height: "70px",
-        margin: "-35px auto 20px",
-        borderRadius: "50%",
-        background: "#FFF3E8",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        color: "#E87722",
-        fontSize: "28px",
-        position: "relative",
+      width: "90px",
+      height: "90px",
+      margin: "-45px auto 20px",
+      borderRadius: "50%",
+      background: "#fff",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      position: "relative",
+      boxShadow: "0 8px 20px rgba(0,0,0,.15)",
+      overflow: "hidden",
       }}
     >
+       <img
+       src={dealer.logo}
+       alt={dealer.name}
+       style={{
+       width: "75%",
+       height: "75%",
+       objectFit: "contain",
+    }}
+  />
+      
       <i className="fas fa-store"></i>
     </div>
 
