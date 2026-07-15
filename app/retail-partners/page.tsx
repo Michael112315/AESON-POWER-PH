@@ -52,33 +52,110 @@ export default function RetailPartnersPage() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div
-          className="page-hero-bg"
-          style={{
-            backgroundImage:
-              "url('https://cms.aesonpower.com.my/wp-content/uploads/2025/07/cta-bg-1-scaled.webp')",
-          }}
-        ></div>
+            {/* Top Images */}
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    height: "100%",
+  }}
+>
+  {/* Bacolod */}
+  <div
+    style={{
+      backgroundImage:
+        "url('https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-bacolod.webp')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative",
+    }}
+  >
+    <div
+      style={{
+        position: "absolute",
+        top: "30px",
+        left: "30px",
+        color: "#fff",
+        fontWeight: 700,
+        fontSize: "20px",
+      }}
+    >
+      📍 BACOLOD
+    </div>
+  </div>
 
-        <div className="container">
-          <div className="page-hero-content">
-            <nav className="breadcrumb">
-              <Link href="/">Home</Link>
-              <span>/</span>
-              <span className="current">Retail Partners</span>
-            </nav>
+  {/* Tacloban */}
+  <div
+    style={{
+      backgroundImage:
+        "url('https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-tacloban.webp')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative",
+    }}
+  >
+    <div
+      style={{
+        position: "absolute",
+        top: "30px",
+        left: "30px",
+        color: "#fff",
+        fontWeight: 700,
+        fontSize: "20px",
+      }}
+    >
+      📍 TACLOBAN
+    </div>
+  </div>
 
-            <h1>Retail Partners</h1>
+  {/* Iloilo */}
+  <div
+    style={{
+      backgroundImage:
+        "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-iloilo.webp')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative",
+    }}
+  >
+    <div
+      style={{
+        position: "absolute",
+        top: "30px",
+        left: "30px",
+        color: "#fff",
+        fontWeight: 700,
+        fontSize: "20px",
+      }}
+    >
+      📍 ILOILO
+    </div>
+  </div>
 
-            <p>
-              Find an authorised Aeson Power dealer near you across the
-              Philippines.
-            </p>
-          </div>
-        </div>
-      </section>
-
+  {/* Roxas */}
+  <div
+    style={{
+      backgroundImage:
+        "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-roxas.webp')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative",
+    }}
+  >
+    <div
+      style={{
+        position: "absolute",
+        top: "30px",
+        left: "30px",
+        color: "#fff",
+        fontWeight: 700,
+        fontSize: "20px",
+      }}
+    >
+      📍 ROXAS
+    </div>
+  </div>
+</div>
       {/* Dealers */}
       <section className="section">
         <div className="container">
