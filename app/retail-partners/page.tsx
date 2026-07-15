@@ -167,41 +167,83 @@ export default function RetailPartnersPage() {
       <i className="fas fa-store"></i>
     </div>
 
-<div
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    gap: "10px",
-    flexWrap: "wrap",
-  }}
->
-  <a
-    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      dealer.address
-    )}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn btn-primary"
-  >
-    <i className="fas fa-map-marker-alt"></i> View Map
-  </a>
+    <div
+      style={{
+        padding: "0 25px 30px",
+        textAlign: "center",
+      }}
+    >
+      <h3
+        style={{
+          marginBottom: "15px",
+          fontSize: "22px",
+        }}
+      >
+        {dealer.name}
+      </h3>
 
-  <a
-    href={`https://wa.me/${dealer.phone.replace("+", "")}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn btn-secondary"
-  >
-    WhatsApp
-  </a>
+      <p
+        style={{
+          color: "#666",
+          lineHeight: 1.6,
+          minHeight: "70px",
+        }}
+      >
+        <i
+          className="fas fa-map-marker-alt"
+          style={{ color: "#E87722" }}
+        ></i>{" "}
+        {dealer.address}
+      </p>
 
-  <a
-    href={`viber://chat?number=${dealer.phone}`}
-    className="btn btn-secondary"
-  >
-    Viber
-  </a>
-</div>
+      <p
+        style={{
+          fontWeight: 600,
+          marginBottom: "25px",
+        }}
+      >
+        <i
+          className="fas fa-phone"
+          style={{ color: "#E87722" }}
+        ></i>{" "}
+        {dealer.phone}
+      </p>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "10px",
+          flexWrap: "wrap",
+        }}
+      >
+        <a
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+            dealer.address
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          <i className="fas fa-map-marker-alt"></i> View Map
+        </a>
+
+        <a
+          href={`https://wa.me/${dealer.phone.replace("+", "")}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-secondary"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href={`viber://chat?number=${dealer.phone}`}
+          className="btn btn-secondary"
+        >
+          Viber
+        </a>
+      </div>
     </div>
   </div>
 ))} 
