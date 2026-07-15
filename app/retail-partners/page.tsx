@@ -86,119 +86,168 @@ export default function RetailPartnersPage() {
               gap: "2rem",
             }}
           >
-            {dealers.map((dealer, index) => (
-              <div
-                key={index}
-                className="reveal"
-                style={{
-                  background: "#fff",
-                  borderRadius: "18px",
-                  padding: "2rem",
-                  boxShadow: "0 10px 25px rgba(0,0,0,.08)",
-                  transition: ".3s",
-                  textAlign: "center",
-                }}
-              >
-                {/* Store Icon / Logo */}
-                <div
-                  style={{
-                    width: "90px",
-                    height: "90px",
-                    margin: "0 auto 20px",
-                    borderRadius: "50%",
-                    background: "rgba(232,119,34,.1)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#E87722",
-                    fontSize: "34px",
-                  }}
-                >
-                  <i className="fas fa-store"></i>
-                </div>
+          {dealers.map((dealer, index) => (
+  <div
+    key={index}
+    className="reveal"
+    style={{
+      background: "#fff",
+      borderRadius: "20px",
+      overflow: "hidden",
+      boxShadow: "0 15px 35px rgba(0,0,0,.08)",
+    }}
+  >
+    {/* City Image */}
+    <div
+      style={{
+        height: "210px",
+        backgroundImage: `url(${dealer.cityImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,.15))",
+        }}
+      />
 
-                <h3
-                  style={{
-                    fontSize: "1.25rem",
-                    marginBottom: ".8rem",
-                    color: "var(--text)",
-                  }}
-                >
-                  {dealer.name}
-                </h3>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20px",
+          left: "20px",
+          color: "#fff",
+        }}
+      >
+        <h2
+          style={{
+            margin: 0,
+            fontSize: "32px",
+            fontWeight: 700,
+          }}
+        >
+          {dealer.city.toUpperCase()}
+        </h2>
 
-                <p
-                  style={{
-                    color: "var(--text-muted)",
-                    marginBottom: "1rem",
-                    lineHeight: 1.6,
-                  }}
-                >
-                  <i
-                    className="fas fa-map-marker-alt"
-                    style={{ color: "#E87722" }}
-                  ></i>
-                  <br />
-                  {dealer.address}
-                </p>
+        <span
+          style={{
+            background: "#E87722",
+            padding: "5px 12px",
+            borderRadius: "20px",
+            fontSize: "12px",
+            fontWeight: 600,
+          }}
+        >
+          {dealer.stores} STORE
+        </span>
+      </div>
+    </div>
 
-                <p style={{ marginBottom: "1.5rem" }}>
-                  <i
-                    className="fas fa-phone"
-                    style={{ color: "#E87722" }}
-                  ></i>{" "}
-                  <a
-                    href={`tel:${dealer.phone}`}
-                    style={{
-                      color: "inherit",
-                      textDecoration: "none",
-                      fontWeight: 600,
-                    }}
-                  >
-                    {dealer.phone}
-                  </a>
-                </p>
+    {/* Store Icon */}
+    <div
+      style={{
+        width: "70px",
+        height: "70px",
+        margin: "-35px auto 20px",
+        borderRadius: "50%",
+        background: "#FFF3E8",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "#E87722",
+        fontSize: "28px",
+        position: "relative",
+      }}
+    >
+      <i className="fas fa-store"></i>
+    </div>
 
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    gap: ".6rem",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {/* Google Maps */}
-                  <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      dealer.address
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    <i className="fas fa-map-marker-alt"></i> Map
-                  </a>
+    <div
+      style={{
+        padding: "0 25px 30px",
+        textAlign: "center",
+      }}
+    >
+      <h3
+        style={{
+          marginBottom: "15px",
+          fontSize: "22px",
+        }}
+      >
+        {dealer.name}
+      </h3>
 
-                  {/* WhatsApp */}
-                  <a
-                    href={`https://wa.me/${dealer.phone.replace("+", "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-secondary"
-                  >
-                    <i className="fab fa-whatsapp"></i> WhatsApp
-                  </a>
+      <p
+        style={{
+          color: "#666",
+          lineHeight: 1.6,
+          minHeight: "70px",
+        }}
+      >
+        <i
+          className="fas fa-map-marker-alt"
+          style={{ color: "#E87722" }}
+        ></i>{" "}
+        {dealer.address}
+      </p>
 
-                  {/* Viber */}
-                  <a
-                    href={`viber://chat?number=${dealer.phone}`}
-                    className="btn btn-secondary"
-                  >
-                    <i className="fab fa-viber"></i> Viber
-                  </a>
-                </div>
-              </div>
-            ))}
+      <p
+        style={{
+          fontWeight: 600,
+          marginBottom: "25px",
+        }}
+      >
+        <i
+          className="fas fa-phone"
+          style={{ color: "#E87722" }}
+        ></i>{" "}
+        {dealer.phone}
+      </p>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "10px",
+          flexWrap: "wrap",
+        }}
+      >
+        <a
+          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+            dealer.address
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          <i className="fas fa-map-marker-alt"></i> View Map
+        </a>
+
+        <a
+          href={`https://wa.me/${dealer.phone.replace("+", "")}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-secondary"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href={`viber://chat?number=${dealer.phone}`}
+          className="btn btn-secondary"
+        >
+          Viber
+        </a>
+      </div>
+    </div>
+  </div>
+))} 
+           
           </div>
 
           {/* Become Dealer */}
@@ -252,7 +301,7 @@ export default function RetailPartnersPage() {
             </p>
 
             <a
-              href="mailto:info@aesonpower.com.ph"
+              href="mailto:sales@aesonpower.com.ph"
               className="btn btn-primary"
             >
               Enquire About Dealership
