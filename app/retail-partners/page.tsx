@@ -52,35 +52,225 @@ export default function RetailPartnersPage() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
+           {/* HERO */}
+<section
+  style={{
+    position: "relative",
+    height: "720px",
+    overflow: "hidden",
+  }}
+>
+  {/* 4 Images */}
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(4,1fr)",
+      height: "100%",
+    }}
+  >
+    <div
+      style={{
+        backgroundImage:
+          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "rgba(0,0,0,.45)",
+        }}
+      />
+    </div>
+
+    <div
+      style={{
+        backgroundImage:
+          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "rgba(0,0,0,.45)",
+        }}
+      />
+    </div>
+
+    <div
+      style={{
+        backgroundImage:
+          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "rgba(0,0,0,.45)",
+        }}
+      />
+    </div>
+
+    <div
+      style={{
+        backgroundImage:
+          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "rgba(0,0,0,.45)",
+        }}
+      />
+    </div>
+  </div>
+
+  {/* Overlay */}
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      color: "#fff",
+    }}
+  >
+    {/* Top */}
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        padding: "30px 60px",
+      }}
+    >
+      <img
+        src="https://www.aesonpower.com.ph/images/logo-white.png"
+        style={{
+          height: "40px",
+        }}
+      />
+
+      <div
+        style={{
+          display: "flex",
+          gap: "40px",
+          fontWeight: 600,
+        }}
+      >
+        <span>🏠 BACOLOD</span>
+        <span>📍 TACLOBAN</span>
+        <span>📍 ILOILO</span>
+        <span>📍 ROXAS</span>
+      </div>
+    </div>
+
+    {/* Center */}
+    <div
+      style={{
+        textAlign: "center",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "58px",
+          marginBottom: "15px",
+          fontWeight: 800,
+        }}
+      >
+        FIND AN AUTHORISED
+        <br />
+        <span style={{ color: "#E87722" }}>
+          AESON POWER DEALER
+        </span>
+      </h1>
+
+      <p
+        style={{
+          maxWidth: "700px",
+          margin: "0 auto",
+          lineHeight: 1.8,
+          fontSize: "18px",
+        }}
+      >
+        Trusted Retail Partners Across the Philippines.
+        <br />
+        Find your nearest Aeson Power Dealer today.
+      </p>
+    </div>
+
+    {/* Bottom Cards */}
+    <div
+      style={{
+        width: "90%",
+        margin: "0 auto -70px",
+        background: "#fff",
+        borderRadius: "20px",
+        display: "grid",
+        gridTemplateColumns: "repeat(4,1fr)",
+        boxShadow: "0 20px 40px rgba(0,0,0,.15)",
+        overflow: "hidden",
+      }}
+    >
+      {[
+        ["fa-store","AUTHORISED DEALERS","All official Aeson dealers"],
+        ["fa-battery-full","GENUINE PRODUCTS","100% genuine batteries"],
+        ["fa-headset","EXPERT SUPPORT","Professional assistance"],
+        ["fa-shield-alt","WARRANTY","Official warranty coverage"],
+      ].map((item,index)=>(
         <div
-          className="page-hero-bg"
+          key={index}
           style={{
-            backgroundImage:
-              "url('https://cms.aesonpower.com.my/wp-content/uploads/2025/07/cta-bg-1-scaled.webp')",
+            padding:"35px",
+            textAlign:"center"
           }}
-        ></div>
+        >
+          <i
+            className={`fas ${item[0]}`}
+            style={{
+              color:"#E87722",
+              fontSize:"36px",
+              marginBottom:"15px"
+            }}
+          />
 
-        <div className="container">
-          <div className="page-hero-content">
-            <nav className="breadcrumb">
-              <Link href="/">Home</Link>
-              <span>/</span>
-              <span className="current">Retail Partners</span>
-            </nav>
+          <h3>{item[1]}</h3>
 
-            <h1>Retail Partners</h1>
-
-            <p>
-              Find an authorised Aeson Power dealer near you across the
-              Philippines.
-            </p>
-          </div>
+          <p
+            style={{
+              color:"#666"
+            }}
+          >
+            {item[2]}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Dealers */}
-      <section className="section">
+      <section 
+        classname ="section"
+        style ={{ paddingTop: "170px"
+                }}
+        >
         <div className="container">
 
           <div
