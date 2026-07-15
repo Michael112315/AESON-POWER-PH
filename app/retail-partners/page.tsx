@@ -19,6 +19,7 @@ const dealers = [
   {
    city: "Iloilo",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "Ilo-Ilo Auto Supply",
     address:
@@ -28,6 +29,7 @@ const dealers = [
   {
     city: "Roxas",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "One Auto Supply",
     address:
@@ -37,6 +39,7 @@ const dealers = [
   {
      city: "Tacloban",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "Jas Auto Parts Gen. Merchandise",
     address:
