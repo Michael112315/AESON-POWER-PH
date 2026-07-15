@@ -167,49 +167,7 @@ export default function RetailPartnersPage() {
       <i className="fas fa-store"></i>
     </div>
 
-    <div
-      style={{
-        padding: "0 25px 30px",
-        textAlign: "center",
-      }}
-    >
-      <h3
-        style={{
-          marginBottom: "15px",
-          fontSize: "22px",
-        }}
-      >
-        {dealer.name}
-      </h3>
-
-      <p
-        style={{
-          color: "#666",
-          lineHeight: 1.6,
-          minHeight: "70px",
-        }}
-      >
-        <i
-          className="fas fa-map-marker-alt"
-          style={{ color: "#E87722" }}
-        ></i>{" "}
-        {dealer.address}
-      </p>
-
-      <p
-        style={{
-          fontWeight: 600,
-          marginBottom: "25px",
-        }}
-      >
-        <i
-          className="fas fa-phone"
-          style={{ color: "#E87722" }}
-        ></i>{" "}
-        {dealer.phone}
-      </p>
-
-      <div
+<div
   style={{
     display: "flex",
     justifyContent: "center",
@@ -217,30 +175,69 @@ export default function RetailPartnersPage() {
     flexWrap: "wrap",
   }}
 >
+  {/* View Map */}
   <a
     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
       dealer.address
     )}`}
     target="_blank"
     rel="noopener noreferrer"
-    className="btn btn-primary"
+    style={{
+      background: "#E87722",
+      color: "#fff",
+      padding: "12px 18px",
+      borderRadius: "10px",
+      textDecoration: "none",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      gap: "8px",
+      transition: "0.3s",
+    }}
   >
-    <i className="fas fa-map-marker-alt"></i> View Map
+    <i className="fas fa-map-marker-alt"></i>
+    View Map
   </a>
 
+  {/* WhatsApp */}
   <a
     href={`https://wa.me/${dealer.phone.replace("+", "")}`}
     target="_blank"
     rel="noopener noreferrer"
-    className="btn btn-secondary"
+    style={{
+      background: "#25D366",
+      color: "#fff",
+      padding: "12px 18px",
+      borderRadius: "10px",
+      textDecoration: "none",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      gap: "8px",
+      transition: "0.3s",
+    }}
   >
+    <i className="fab fa-whatsapp"></i>
     WhatsApp
   </a>
 
+  {/* Viber */}
   <a
     href={`viber://chat?number=${dealer.phone}`}
-    className="btn btn-secondary"
+    style={{
+      background: "#7360F2",
+      color: "#fff",
+      padding: "12px 18px",
+      borderRadius: "10px",
+      textDecoration: "none",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      gap: "8px",
+      transition: "0.3s",
+    }}
   >
+    <i className="fab fa-viber"></i>
     Viber
   </a>
 </div>
