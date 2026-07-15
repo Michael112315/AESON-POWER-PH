@@ -13,7 +13,7 @@ const dealers = [
     stores: 1,
     name: "KENPRO / BETTER BATTERIES BACOLOD",
     address:
-      "Luxur Place, Magsaysay Avenue, Singcang, Bacolod City, Negros Occidental",
+      "MW3R+4WV, Magsaysay Ave, Bacolod, 6100 Negros Occidental",
     phone: "+639273179178",
   },
   {
