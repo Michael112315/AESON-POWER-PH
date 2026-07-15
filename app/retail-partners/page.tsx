@@ -64,7 +64,7 @@ export default function RetailPartnersPage() {
   <div
     style={{
       display: "grid",
-      gridTemplateColumns: "1fr 1fr 1fr",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
       height: "100%",
     }}
   >
@@ -91,6 +91,15 @@ export default function RetailPartnersPage() {
         backgroundPosition: "center",
       }}
     />
+
+        <div
+      style={{
+        backgroundImage: "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-roxas.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    />
+    
   </div>
 
   {/* Overlay */}
