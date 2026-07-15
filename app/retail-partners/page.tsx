@@ -210,40 +210,40 @@ export default function RetailPartnersPage() {
       </p>
 
       <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "10px",
-          flexWrap: "wrap",
-        }}
-      >
-        <a
-          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-            dealer.address
-          )}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary"
-        >
-          <i className="fas fa-map-marker-alt"></i> View Map
-        </a>
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    gap: "10px",
+    flexWrap: "wrap",
+  }}
+>
+  <a
+    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      dealer.address
+    )}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-primary"
+  >
+    <i className="fas fa-map-marker-alt"></i> View Map
+  </a>
 
-        <a
-          href={`https://wa.me/${dealer.phone.replace("+", "")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-secondary"
-        >
-          WhatsApp
-        </a>
+  <a
+    href={`https://wa.me/${dealer.phone.replace("+", "")}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-secondary"
+  >
+    WhatsApp
+  </a>
 
-        <a
-          href={`viber://chat?number=${dealer.phone}`}
-          className="btn btn-secondary"
-        >
-          Viber
-        </a>
-      </div>
+  <a
+    href={`viber://chat?number=${dealer.phone}`}
+    className="btn btn-secondary"
+  >
+    Viber
+  </a>
+</div>
     </div>
   </div>
 ))} 
