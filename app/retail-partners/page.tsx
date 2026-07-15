@@ -162,6 +162,7 @@ export default function RetailPartnersPage() {
     >
       <img
         src="https://www.aesonpower.com.ph/images/logo-white.png"
+        alt = "Aeson Power"
         style={{
           height: "40px",
         }}
