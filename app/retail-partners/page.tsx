@@ -362,4 +362,4 @@ export default function RetailPartnersPage() {
     </>
   )
 }
-this is my code where to replace it 
+
