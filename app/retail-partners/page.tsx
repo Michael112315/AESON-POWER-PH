@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 const dealers = [
   {
      city: "Bacolod",
-    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Kenpro-Logo-.webp",
+    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Kenpro-Logo-.webp",
     stores: 1,
     name: "KENPRO / BETTER BATTERIES BACOLOD",
     address:
@@ -18,8 +18,8 @@ const dealers = [
   },
   {
    city: "Iloilo",
-    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "Ilo-Ilo Auto Supply",
     address:
@@ -28,8 +28,8 @@ const dealers = [
   },
   {
     city: "Roxas",
-    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "One Auto Supply",
     address:
@@ -38,8 +38,8 @@ const dealers = [
   },
   {
      city: "Tacloban",
-    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "Jas Auto Parts Gen. Merchandise",
     address:
@@ -71,7 +71,7 @@ export default function RetailPartnersPage() {
     <div
       style={{
         backgroundImage:
-          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp)",
+          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
@@ -89,7 +89,7 @@ export default function RetailPartnersPage() {
     <div
       style={{
         backgroundImage:
-          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp)",
+          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
@@ -107,7 +107,7 @@ export default function RetailPartnersPage() {
     <div
       style={{
         backgroundImage:
-          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp)",
+          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
@@ -125,7 +125,7 @@ export default function RetailPartnersPage() {
     <div
       style={{
         backgroundImage:
-          "url(http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp)",
+          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
@@ -268,7 +268,7 @@ export default function RetailPartnersPage() {
       {/* Dealers */}
       <section 
         classname ="section"
-        style ={{ paddingTop: "170px"
+        style ={{ paddingTop: "170px",
                 }}
         >
         <div className="container">
