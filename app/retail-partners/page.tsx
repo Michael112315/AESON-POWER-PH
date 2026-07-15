@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 const dealers = [
   {
      city: "Bacolod",
-    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Kenpro-Logo-.webp",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Kenpro-Logo-.webp",
     stores: 1,
     name: "KENPRO / BETTER BATTERIES BACOLOD",
     address:
@@ -18,8 +18,8 @@ const dealers = [
   },
   {
    city: "Iloilo",
-    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "Ilo-Ilo Auto Supply",
     address:
@@ -28,8 +28,8 @@ const dealers = [
   },
   {
     city: "Roxas",
-    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "One Auto Supply",
     address:
@@ -38,8 +38,8 @@ const dealers = [
   },
   {
      city: "Tacloban",
-    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
     stores: 1,
     name: "Jas Auto Parts Gen. Merchandise",
     address:
@@ -52,226 +52,35 @@ export default function RetailPartnersPage() {
   return (
     <>
       {/* Hero */}
-           {/* HERO */}
-<section
-  style={{
-    position: "relative",
-    height: "720px",
-    overflow: "hidden",
-  }}
->
-  {/* 4 Images */}
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(4,1fr)",
-      height: "100%",
-    }}
-  >
-    <div
-      style={{
-        backgroundImage:
-          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        position: "relative",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "rgba(0,0,0,.45)",
-        }}
-      />
-    </div>
-
-    <div
-      style={{
-        backgroundImage:
-          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        position: "relative",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "rgba(0,0,0,.45)",
-        }}
-      />
-    </div>
-
-    <div
-      style={{
-        backgroundImage:
-          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        position: "relative",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "rgba(0,0,0,.45)",
-        }}
-      />
-    </div>
-
-    <div
-      style={{
-        backgroundImage:
-          "url(https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        position: "relative",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "rgba(0,0,0,.45)",
-        }}
-      />
-    </div>
-  </div>
-
-  {/* Overlay */}
-  <div
-    style={{
-      position: "absolute",
-      inset: 0,
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-      color: "#fff",
-    }}
-  >
-    {/* Top */}
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "30px 60px",
-      }}
-    >
-      <img
-        src="https://www.aesonpower.com.ph/images/logo-white.png"
-        alt = "Aeson Power"
-        style={{
-          height: "40px",
-        }}
-      />
-
-      <div
-        style={{
-          display: "flex",
-          gap: "40px",
-          fontWeight: 600,
-        }}
-      >
-        <span>🏠 BACOLOD</span>
-        <span>📍 TACLOBAN</span>
-        <span>📍 ILOILO</span>
-        <span>📍 ROXAS</span>
-      </div>
-    </div>
-
-    {/* Center */}
-    <div
-      style={{
-        textAlign: "center",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "58px",
-          marginBottom: "15px",
-          fontWeight: 800,
-        }}
-      >
-        FIND AN AUTHORISED
-        <br />
-        <span style={{ color: "#E87722" }}>
-          AESON POWER DEALER
-        </span>
-      </h1>
-
-      <p
-        style={{
-          maxWidth: "700px",
-          margin: "0 auto",
-          lineHeight: 1.8,
-          fontSize: "18px",
-        }}
-      >
-        Trusted Retail Partners Across the Philippines.
-        <br />
-        Find your nearest Aeson Power Dealer today.
-      </p>
-    </div>
-
-    {/* Bottom Cards */}
-    <div
-      style={{
-        width: "90%",
-        margin: "0 auto -70px",
-        background: "#fff",
-        borderRadius: "20px",
-        display: "grid",
-        gridTemplateColumns: "repeat(4,1fr)",
-        boxShadow: "0 20px 40px rgba(0,0,0,.15)",
-        overflow: "hidden",
-      }}
-    >
-      {[
-        ["fa-store","AUTHORISED DEALERS","All official Aeson dealers"],
-        ["fa-battery-full","GENUINE PRODUCTS","100% genuine batteries"],
-        ["fa-headset","EXPERT SUPPORT","Professional assistance"],
-        ["fa-shield-alt","WARRANTY","Official warranty coverage"],
-      ].map((item,index)=>(
+      <section className="page-hero">
         <div
-          key={index}
+          className="page-hero-bg"
           style={{
-            padding:"35px",
-            textAlign:"center"
+            backgroundImage:
+              "url('https://cms.aesonpower.com.my/wp-content/uploads/2025/07/cta-bg-1-scaled.webp')",
           }}
-        >
-          <i
-            className={`fas ${item[0]}`}
-            style={{
-              color:"#E87722",
-              fontSize:"36px",
-              marginBottom:"15px"
-            }}
-          />
+        ></div>
 
-          <h3>{item[1]}</h3>
+        <div className="container">
+          <div className="page-hero-content">
+            <nav className="breadcrumb">
+              <Link href="/">Home</Link>
+              <span>/</span>
+              <span className="current">Retail Partners</span>
+            </nav>
 
-          <p
-            style={{
-              color:"#666"
-            }}
-          >
-            {item[2]}
-          </p>
+            <h1>Retail Partners</h1>
+
+            <p>
+              Find an authorised Aeson Power dealer near you across the
+              Philippines.
+            </p>
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Dealers */}
-      <section 
-        classname ="section"
-        style ={{ paddingTop: "170px",
-                }}
-        >
+      <section className="section">
         <div className="container">
 
           <div
@@ -553,4 +362,4 @@ export default function RetailPartnersPage() {
     </>
   )
 }
-
+this is my code teach me where to replace and what code will be replace give me the step by step thank you
