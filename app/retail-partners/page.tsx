@@ -80,110 +80,77 @@ export default function RetailPartnersPage() {
       </section>
 
       {/* Dealers */}
-    </section>
-
-{/* Featured Cities */}
-<section style={{ marginTop: "-80px", position: "relative", zIndex: 5 }}>
-  <div className="container">
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(4,1fr)",
-        gap: "20px",
-      }}
-    >
-      {[
-        {
-          city: "BACOLOD",
-          image:
-            "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
-        },
-        {
-          city: "ILOILO",
-          image:
-            "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
-        },
-        {
-          city: "ROXAS",
-          image:
-            "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
-        },
-        {
-          city: "TACLOBAN",
-          image:
-            "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
-        },
-      ].map((item) => (
-        <div
-          key={item.city}
-          style={{
-            position: "relative",
-            height: "250px",
-            borderRadius: "20px",
-            overflow: "hidden",
-            boxShadow: "0 12px 35px rgba(0,0,0,.18)",
-          }}
-        >
-          <img
-            src={item.image}
-            alt={item.city}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
+      <section className="section">
+        <div className="container">
 
           <div
             style={{
-              position: "absolute",
-              inset: 0,
-              background:
-                "linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.15))",
-            }}
-          />
-
-          <div
-            style={{
-              position: "absolute",
-              bottom: "20px",
-              left: "20px",
-              color: "#fff",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(330px,1fr))",
+              gap: "2rem",
             }}
           >
-            <h2
-              style={{
-                margin: 0,
-                fontSize: "28px",
-                fontWeight: 700,
-                letterSpacing: "2px",
-              }}
-            >
-              {item.city}
-            </h2>
+          {dealers.map((dealer, index) => (
+  <div
+    key={index}
+    className="reveal"
+    style={{
+      background: "#fff",
+      borderRadius: "20px",
+      overflow: "hidden",
+      boxShadow: "0 15px 35px rgba(0,0,0,.08)",
+    }}
+  >
+    {/* City Image */}
+    <div
+      style={{
+        height: "210px",
+        backgroundImage: `url(${dealer.cityImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,.15))",
+        }}
+      />
 
-            <span
-              style={{
-                display: "inline-block",
-                marginTop: "8px",
-                background: "#E87722",
-                padding: "6px 14px",
-                borderRadius: "20px",
-                fontSize: "12px",
-                fontWeight: 600,
-              }}
-            >
-              AUTHORIZED DEALER
-            </span>
-          </div>
-        </div>
-      ))}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20px",
+          left: "20px",
+          color: "#fff",
+        }}
+      >
+        <h2
+          style={{
+            margin: 0,
+            fontSize: "32px",
+            fontWeight: 700,
+          }}
+        >
+          {dealer.city.toUpperCase()}
+        </h2>
+
+        <span
+          style={{
+            background: "#E87722",
+            padding: "5px 12px",
+            borderRadius: "20px",
+            fontSize: "12px",
+            fontWeight: 600,
+          }}
+        >
+          {dealer.stores} STORE
+        </span>
+      </div>
     </div>
-  </div>
-</section>
-
-{/* Dealers */}
-<section className="section">
 
     {/* Store Icon */}
     <div
@@ -395,3 +362,4 @@ export default function RetailPartnersPage() {
     </>
   )
 }
+this is my code where to replace it 
