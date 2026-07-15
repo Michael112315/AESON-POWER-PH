@@ -52,110 +52,171 @@ export default function RetailPartnersPage() {
   return (
     <>
       {/* Hero */}
-            {/* Top Images */}
-<div
+        <section
   style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    height: "100%",
+    position: "relative",
+    height: "620px",
+    overflow: "hidden",
+    color: "#fff",
   }}
 >
-  {/* Bacolod */}
+  {/* Top Images */}
   <div
     style={{
-      backgroundImage:
-        "url('https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-bacolod.webp')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      position: "relative",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr",
+      height: "100%",
     }}
   >
     <div
       style={{
-        position: "absolute",
-        top: "30px",
-        left: "30px",
-        color: "#fff",
-        fontWeight: 700,
-        fontSize: "20px",
+        backgroundImage: "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-bacolod.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
-    >
-      📍 BACOLOD
-    </div>
+    />
+
+    <div
+      style={{
+        backgroundImage: "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-tacloban.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    />
+
+    <div
+      style={{
+        backgroundImage: "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-iloilo.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    />
   </div>
 
-  {/* Tacloban */}
+  {/* Overlay */}
   <div
     style={{
-      backgroundImage:
-        "url('https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-tacloban.webp')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      position: "relative",
+      position: "absolute",
+      inset: 0,
+      background: "rgba(10,20,40,.65)",
+    }}
+  />
+
+  {/* Content */}
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+      textAlign: "center",
+      padding: "20px",
     }}
   >
-    <div
+    <h1
       style={{
-        position: "absolute",
-        top: "30px",
-        left: "30px",
-        color: "#fff",
-        fontWeight: 700,
-        fontSize: "20px",
+        fontSize: "58px",
+        fontWeight: 800,
+        marginBottom: "15px",
       }}
     >
-      📍 TACLOBAN
-    </div>
+      FIND AN AUTHORISED
+      <br />
+      <span style={{ color: "#E87722" }}>
+        AESON POWER DEALER
+      </span>
+    </h1>
+
+    <p
+      style={{
+        fontSize: "18px",
+        maxWidth: "700px",
+      }}
+    >
+      Trusted Retail Partners Across the Philippines
+    </p>
   </div>
 
-  {/* Iloilo */}
+  {/* Floating White Box */}
   <div
     style={{
-      backgroundImage:
-        "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-iloilo.webp')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      position: "relative",
+      position: "absolute",
+      bottom: "-55px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      width: "90%",
+      maxWidth: "1200px",
+      background: "#fff",
+      borderRadius: "20px",
+      padding: "35px",
+      display: "grid",
+      gridTemplateColumns: "repeat(4,1fr)",
+      gap: "30px",
+      color: "#222",
+      boxShadow: "0 20px 50px rgba(0,0,0,.2)",
     }}
   >
-    <div
-      style={{
-        position: "absolute",
-        top: "30px",
-        left: "30px",
-        color: "#fff",
-        fontWeight: 700,
-        fontSize: "20px",
-      }}
-    >
-      📍 ILOILO
-    </div>
-  </div>
+    <div style={{ textAlign: "center" }}>
+      <i
+        className="fas fa-store"
+        style={{
+          color: "#E87722",
+          fontSize: "32px",
+        }}
+      ></i>
 
-  {/* Roxas */}
-  <div
-    style={{
-      backgroundImage:
-        "url('http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/heading-roxas.webp')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      position: "relative",
-    }}
-  >
-    <div
-      style={{
-        position: "absolute",
-        top: "30px",
-        left: "30px",
-        color: "#fff",
-        fontWeight: 700,
-        fontSize: "20px",
-      }}
-    >
-      📍 ROXAS
+      <h3>Authorised Dealers</h3>
+
+      <p>All stores are official Aeson Power retailers.</p>
+    </div>
+
+    <div style={{ textAlign: "center" }}>
+      <i
+        className="fas fa-map-marker-alt"
+        style={{
+          color: "#E87722",
+          fontSize: "32px",
+        }}
+      ></i>
+
+      <h3>Find Nearby Stores</h3>
+
+      <p>Locate the nearest dealer.</p>
+    </div>
+
+    <div style={{ textAlign: "center" }}>
+      <i
+        className="fas fa-headset"
+        style={{
+          color: "#E87722",
+          fontSize: "32px",
+        }}
+      ></i>
+
+      <h3>Expert Support</h3>
+
+      <p>Get assistance from trusted dealers.</p>
+    </div>
+
+    <div style={{ textAlign: "center" }}>
+      <i
+        className="fas fa-shield-alt"
+        style={{
+          color: "#E87722",
+          fontSize: "32px",
+        }}
+      ></i>
+
+      <h3>Warranty Coverage</h3>
+
+      <p>Every dealer supports official warranty claims.</p>
     </div>
   </div>
-</div>
+</section>
+
+<div style={{ height: "90px" }}></div>
       {/* Dealers */}
       <section className="section">
         <div className="container">
