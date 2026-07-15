@@ -175,7 +175,6 @@ export default function RetailPartnersPage() {
     }}
   />
       
-      <i className="fas fa-store"></i>
     </div>
 
     <div
