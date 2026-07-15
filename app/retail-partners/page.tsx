@@ -7,24 +7,40 @@ export const metadata: Metadata = {
 
 const dealers = [
   {
+     city: "Bacolod",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
+    stores: 1,
     name: "KENPRO / BETTER BATTERIES BACOLOD",
-    address: "Luxur Place, Magsaysay Avenue, Singcang, Bacolod City, Negros Occidental",
+    address:
+      "Luxur Place, Magsaysay Avenue, Singcang, Bacolod City, Negros Occidental",
     phone: "+639273179178",
   },
   {
-    name: "Jas Auto Parts Gen. Merchandise",
-    address: "Door 13-14 Village Center Building, Avenida Veteranos, Tacloban City",
-    phone: "+639175978223",
-  },
-  {
+   city: "Iloilo",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
+    stores: 1,
     name: "Ilo-Ilo Auto Supply",
-    address: "Corner Ledesma Street, Valeria Street, Iloilo City, Iloilo, Philippines",
+    address:
+      "Corner Ledesma Street, Valeria Street, Iloilo City, Iloilo, Philippines",
     phone: "+639173030300",
   },
   {
+    city: "Roxas",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
+    stores: 1,
     name: "One Auto Supply",
-    address: "Brgy. Banica, Roxas City 5800, Philippines",
+    address:
+      "Brgy. Banica, Roxas City 5800, Philippines",
     phone: "+639189442470",
+  },
+  {
+     city: "Tacloban",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
+    stores: 1,
+    name: "Jas Auto Parts Gen. Merchandise",
+    address:
+      "Door 13-14 Village Center Building, Avenida Veteranos, Tacloban City",
+    phone: "+639175978223",
   },
 ]
 
