@@ -175,69 +175,30 @@ export default function RetailPartnersPage() {
     flexWrap: "wrap",
   }}
 >
-  {/* View Map */}
   <a
     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
       dealer.address
     )}`}
     target="_blank"
     rel="noopener noreferrer"
-    style={{
-      background: "#E87722",
-      color: "#fff",
-      padding: "12px 18px",
-      borderRadius: "10px",
-      textDecoration: "none",
-      fontWeight: 600,
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      transition: "0.3s",
-    }}
+    className="btn btn-primary"
   >
-    <i className="fas fa-map-marker-alt"></i>
-    View Map
+    <i className="fas fa-map-marker-alt"></i> View Map
   </a>
 
-  {/* WhatsApp */}
   <a
     href={`https://wa.me/${dealer.phone.replace("+", "")}`}
     target="_blank"
     rel="noopener noreferrer"
-    style={{
-      background: "#25D366",
-      color: "#fff",
-      padding: "12px 18px",
-      borderRadius: "10px",
-      textDecoration: "none",
-      fontWeight: 600,
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      transition: "0.3s",
-    }}
+    className="btn btn-secondary"
   >
-    <i className="fab fa-whatsapp"></i>
     WhatsApp
   </a>
 
-  {/* Viber */}
   <a
     href={`viber://chat?number=${dealer.phone}`}
-    style={{
-      background: "#7360F2",
-      color: "#fff",
-      padding: "12px 18px",
-      borderRadius: "10px",
-      textDecoration: "none",
-      fontWeight: 600,
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      transition: "0.3s",
-    }}
+    className="btn btn-secondary"
   >
-    <i className="fab fa-viber"></i>
     Viber
   </a>
 </div>
