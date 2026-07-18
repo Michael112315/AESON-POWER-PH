@@ -198,11 +198,11 @@ export default function WarrantyPage() {
                     </div>
                     <div className="form-group">
                       <label className="form-label" htmlFor="vehicle-make">Car Make <span style={{ color: 'var(--accent)' }}>*</span></label>
-                      <input type="text" id="vehicle-make" name="vehicle_make" className="form-control" placeholder="e.g. Perodua" required />
+                      <input type="text" id="vehicle-make" name="vehicle_make" className="form-control" placeholder="e.g. Toyota" required />
                     </div>
                     <div className="form-group">
                       <label className="form-label" htmlFor="vehicle-model">Car Model <span style={{ color: 'var(--accent)' }}>*</span></label>
-                      <input type="text" id="vehicle-model" name="vehicle_model" className="form-control" placeholder="e.g. Myvi" required />
+                      <input type="text" id="vehicle-model" name="vehicle_model" className="form-control" placeholder="e.g. Vios" required />
                     </div>
                     <div className="form-group">
                       <label className="form-label" htmlFor="vehicle-year">Year <span style={{ color: 'var(--accent)' }}>*</span></label>
