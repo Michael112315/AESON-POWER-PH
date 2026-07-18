@@ -70,7 +70,6 @@ export default function Navbar() {
             </a>
             <ul className="nav-dropdown-menu">
               <li><Link href="/warranty" onClick={() => setMenuOpen(false)}>Warranty Registration</Link></li>
-              <li><Link href="/roadside-assistance" onClick={() => setMenuOpen(false)}>Roadside Assistance</Link></li>
               <li><Link href="/faq" onClick={() => setMenuOpen(false)}>Support &amp; FAQs</Link></li>
             </ul>
           </li>
