@@ -1,7 +1,12 @@
 
-
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
+console.log("SUPABASE_URL:", process.env.NEXT_PUBLIC_SUPABASE_URL)
+console.log("RESEND_KEY:", process.env.RESEND_API_KEY)
+
 
 const VALID_BATTERY_MODELS = new Set([
   'NA-40B20L (NS40)',
@@ -165,10 +170,70 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    return NextResponse.json({
-      success: true,
-      message: 'Warranty registration submitted successfully.',
-    })
+    // ===============================
+// SEND EMAIL TO YOUR COMPANY
+// ===============================
+
+const companyEmail = await resend.emails.send({
+  from: 'Aeson Power <sales@aesonpower.com.ph>',
+  to: [
+    'sales@aesonpower.com.ph',
+    'admin@aesonpower.com.ph',
+  ],
+  subject: 'New Warranty Registration',
+  html: `
+    <h2>New Warranty Registration</h2>
+
+    <p><strong>Name:</strong> ${ownerName}</p>
+    <p><strong>Email:</strong> ${ownerEmail}</p>
+    <p><strong>Phone:</strong> ${ownerPhone}</p>
+
+    <p><strong>Battery Model:</strong> ${batteryModel}</p>
+    <p><strong>Serial Number:</strong> ${serialNumber}</p>
+
+    <p><strong>Vehicle:</strong> ${vehicleMake} ${vehicleModel}</p>
+    <p><strong>Plate Number:</strong> ${vehiclePlate}</p>
+  `,
+})
+
+console.log(companyEmail)
+
+// ===============================
+// SEND EMAIL TO CUSTOMER
+// ===============================
+
+const customerEmail = await resend.emails.send({
+  from: 'Aeson Power <sales@aesonpower.com.ph>',
+  to: ownerEmail,
+  subject: 'Warranty Registration Received',
+  html: `
+    <h2>Thank you for registering your warranty.</h2>
+
+    <p>Dear ${ownerName},</p>
+
+    <p>We have successfully received your warranty registration.</p>
+
+    <p><strong>Battery Model:</strong> ${batteryModel}</p>
+
+    <p><strong>Serial Number:</strong> ${serialNumber}</p>
+
+    <p><strong>Vehicle:</strong> ${vehicleMake} ${vehicleModel}</p>
+
+    <p><strong>Plate Number:</strong> ${vehiclePlate}</p>
+
+    <br>
+
+    <p>Thank you for choosing Aeson Power.</p>
+  `,
+})
+
+console.log(customerEmail)
+
+return NextResponse.json({
+  success: true,
+  message: 'Warranty registration submitted successfully.',
+})
+  
 
   } catch (err) {
     console.error('Warranty API error:', err)
