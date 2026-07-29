@@ -127,6 +127,31 @@ p  { line-height: 1.7; }
 .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .75rem 1.75rem; font-weight: 600; font-size: .9375rem; border-radius: var(--radius); transition: var(--transition); white-space: nowrap; cursor: pointer; border: 2px solid transparent; text-align: center; }
 .btn-primary { background: var(--accent); color: var(--white); border-color: var(--accent); }
 .btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(232,119,34,.4); }
+/* ===============================
+   Viber Button
+================================ */
+
+.btn-viber {
+  background: #7360F2;
+  color: white;
+  border: 2px solid #7360F2;
+}
+
+.btn-viber:hover {
+  background: #5A47D6;
+  border-color: #5A47D6;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(115,96,242,.45);
+}
+
+.btn-viber i {
+  transition: transform .3s ease;
+}
+
+.btn-viber:hover i {
+  transform: scale(1.2);
+}
 .btn-outline { background: transparent; color: var(--white); border-color: var(--white); }
 .btn-outline:hover { background: var(--white); color: var(--primary); }
 .btn-outline-dark { background: transparent; color: var(--primary); border-color: var(--primary); }
