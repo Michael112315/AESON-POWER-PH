@@ -55,15 +55,25 @@ export default function HomePage() {
             <p className="section-subtitle">From finding the right battery to registering your warranty, we&apos;ve got you covered.</p>
           </div>
           <div className="grid-3 reveal">
-            <Link href="/battery-finder" className="quicklink-card">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-quicklink-1-scaled.webp" alt="Battery Finder" />
-              <div className="quicklink-card-overlay">
-                <h3>Battery Finder</h3>
-                <p>Find the perfect battery for your vehicle in seconds.</p>
-                <span className="btn btn-primary btn-sm">Find Now <i className="fas fa-arrow-right"></i></span>
-              </div>
-            </Link>
+           <div className="quicklink-card">
+{/* eslint-disable-next-line @next/next/no-img-element */}
+<img
+  src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-quicklink-1-scaled.webp"
+  alt="Contact us on Viber"
+/>
+
+<div className="quicklink-card-overlay">
+  <h3>Contact Us</h3>
+  <p>Chat with our sales team on Viber for assistance.</p>
+
+  <a
+    href="viber://chat?number=%2B639273179178"
+    className="btn btn-viber btn-sm"
+  >
+    Chat on Viber <i className="fab fa-viber"></i>
+  </a>
+</div>
+</div>
             <Link href="/retail-partners" className="quicklink-card">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="https://cms.aesonpower.com.my/wp-content/uploads/2025/07/home-quicklink-2-scaled.webp" alt="Retail Partners" />

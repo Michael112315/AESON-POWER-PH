@@ -65,33 +65,9 @@ export default function ProductsPage() {
       fits: 'Toyota Hilux, Fortuner · Nissan Navara · Mitsubishi Triton',
       fitsIcon: 'fa-truck',
     },
-    {
-      model: 'M42L',
-      designation: 'M42L Designation',
-      img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/12/m42l-no-bg.png',
-      cca: '520–600 A',
-      weight: '5.1 ± 0.5 kg',
-      fits: 'BMW 1/3 Series, X1 · Mercedes A-Class, GLA',
-      fitsIcon: 'fa-car',
-    },
-    {
-      model: 'Q85L-SS',
-      designation: 'Q85 Designation',
-      img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/Q85L%E4%BB%B0-scaled-1.webp',
-      cca: '650–800 A',
-      weight: '6 ± 0.5 kg',
-      fits: 'Toyota Alphard · BMW 5 Series, X3 · Mercedes C-Class, GLC',
-      fitsIcon: 'fa-car',
-    },
-    {
-      model: 'S95L-SS',
-      designation: 'S95 Designation',
-      img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/S95L%E4%BB%B0-scaled-1.webp',
-      cca: '720–850 A',
-      weight: '7 ± 0.5 kg',
-      fits: 'BMW X5 · Mercedes E-Class · Large premium SUVs',
-      fitsIcon: 'fa-car',
-    },
+    
+    
+   
   ]
 
   const visibleNaPulse = activeTab === 'all' || activeTab === 'napulse'
@@ -120,8 +96,10 @@ export default function ProductsPage() {
               <p style={{ color: 'var(--text-muted)' }}>All models feature SAE AP terminals, 14.4–14.8V charge voltage, and a comprehensive 30-month warranty.</p>
             </div>
             <div style={{ display: 'flex', gap: '1rem', flexShrink: 0, flexWrap: 'wrap' }}>
-              <Link href="/battery-finder" className="btn btn-primary"><i className="fas fa-search"></i> Find My Battery</Link>
+             
+    
               <Link href="/retail-partners" className="btn btn-outline-dark"><i className="fas fa-store"></i> Buy Now</Link>
+            
             </div>
           </div>
         </div>
@@ -139,8 +117,8 @@ export default function ProductsPage() {
           {/* TABS */}
           <div style={{ display: 'flex', gap: '.75rem', justifyContent: 'center', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
             <button className={`btn ${activeTab === 'all' ? 'btn-primary' : 'btn-outline-dark'} btn-sm`} onClick={() => setActiveTab('all')}>All Models</button>
-            <button className={`btn ${activeTab === 'napulse' ? 'btn-primary' : 'btn-outline-dark'} btn-sm`} onClick={() => setActiveTab('napulse')}>NaPulse Series</button>
-            <button className={`btn ${activeTab === 'naforce' ? 'btn-primary' : 'btn-outline-dark'} btn-sm`} onClick={() => setActiveTab('naforce')}>NaForce Series</button>
+          { /* <button className={`btn ${activeTab === 'napulse' ? 'btn-primary' : 'btn-outline-dark'} btn-sm`} onClick={() => setActiveTab('napulse')}>NaPulse Series</button>*/
+           /* <button className={`btn ${activeTab === 'naforce' ? 'btn-primary' : 'btn-outline-dark'} btn-sm`} onClick={() => setActiveTab('naforce')}>NaForce Series</button>*/}
           </div>
 
           <div className="grid-3 reveal">
@@ -283,7 +261,20 @@ export default function ProductsPage() {
             <h2>Use Our Battery Finder</h2>
             <p>Select your car make and model and we&apos;ll instantly show you the perfect Aeson Power battery — no guesswork needed.</p>
             <div className="btn-group">
-              <Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find My Battery</Link>
+              {/*<Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find My Battery</Link>*/}
+
+       <a
+  href="viber://chat?number=%2B639273179178"
+className="btn btn-viber btn-lg"
+  style={{
+    backgroundColor: "#7360F2",
+    borderColor: "#7360F2",
+    color: "#fff"
+  }}
+>
+  <i className="fab fa-viber" style={{ marginRight: "8px" }}></i>
+  Contact Us on Viber
+</a>       
               <Link href="/faq" className="btn btn-outline btn-lg">Common Questions</Link>
             </div>
           </div>
