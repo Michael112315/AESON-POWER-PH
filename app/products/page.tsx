@@ -190,7 +190,7 @@ export default function ProductsPage() {
           <div className="section-header center reveal">
             <span className="section-label">Complete Specifications</span>
             <h2 className="section-title">Side-by-Side Comparison</h2>
-            <p className="section-subtitle">All 9 models at a glance — choose by CCA rating and weight for your vehicle type.</p>
+            <p className="section-subtitle">All 6 models at a glance — choose by CCA rating and weight for your vehicle type.</p>
           </div>
           <div style={{ overflowX: 'auto' }} className="reveal">
             <table className="comparison-table">
@@ -212,9 +212,9 @@ export default function ProductsPage() {
                 <tr><td><strong>NA-NS70L</strong></td><td>NS70</td><td>450–600 A</td><td>5 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
                 <tr style={{ background: 'rgba(232,119,34,.04)' }}><td><strong>H5 / L2-400L</strong> ⭐</td><td>DIN55L</td><td>450–600 A</td><td>4.5 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
                 <tr><td><strong>D31L</strong></td><td>95D31L / NX120-7L</td><td>650–800 A</td><td>6.4 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
-                <tr><td><strong>M42L</strong></td><td>M42L</td><td>520–600 A</td><td>5.1 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
+               {/* <tr><td><strong>M42L</strong></td><td>M42L</td><td>520–600 A</td><td>5.1 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
                 <tr><td><strong>Q85L-SS</strong></td><td>Q85</td><td>650–800 A</td><td>6 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
-                <tr><td><strong>S95L-SS</strong></td><td>S95</td><td>720–850 A</td><td>7 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
+                <tr><td><strong>S95L-SS</strong></td><td>S95</td><td>720–850 A</td><td>7 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>*/}
               </tbody>
             </table>
           </div>

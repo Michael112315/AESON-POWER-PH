@@ -204,7 +204,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header center">
             <span className="section-label" style={{ color: 'var(--accent-light)' }}>Our Products</span>
-            <h2 className="section-title white">9 Models, Every Vehicle Covered</h2>
+            <h2 className="section-title white">6 Models, Every Vehicle Covered</h2>
             <p className="section-subtitle white">From city cars to SUVs and pick-up trucks, Aeson Power has the right sodium-ion battery for your vehicle.</p>
           </div>
           <div className="grid-4 reveal" style={{ marginBottom: '2.5rem' }}>
@@ -235,7 +235,7 @@ export default function HomePage() {
             </div>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <Link href="/products" className="btn btn-primary btn-lg">View All 9 Models <i className="fas fa-arrow-right"></i></Link>
+            <Link href="/products" className="btn btn-primary btn-lg">View All 6 Models <i className="fas fa-arrow-right"></i></Link>
           </div>
         </div>
       </section>
