@@ -13,8 +13,7 @@ export default function ProductsPage() {
       img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/NS40L.242-scaled-1.webp',
       cca: '350–450 A',
       weight: '4 ± 0.5 kg',
-      fits: 'Perodua Myvi, Axia, Bezza · Proton Saga · Toyota Vios',
-      fitsIcon: 'fa-car',
+    
     },
     {
       model: 'NA-NS50L',
@@ -22,8 +21,7 @@ export default function ProductsPage() {
       img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/55D23L%E4%BB%B0-scaled-1.webp',
       cca: '450–600 A',
       weight: '4.5 ± 0.5 kg',
-      fits: 'Perodua Alza, Aruz · Proton Persona, Iriz · Honda HR-V',
-      fitsIcon: 'fa-car',
+     
     },
     {
       model: 'NA-60B24L',
@@ -31,8 +29,7 @@ export default function ProductsPage() {
       img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/NS60L.244.webp',
       cca: '370–500 A',
       weight: '4.2 ± 0.5 kg',
-      fits: 'Perodua Ativa · Proton Exora · Nissan Almera variants',
-      fitsIcon: 'fa-car',
+     
     },
     {
       model: 'NA-NS70L',
@@ -40,8 +37,7 @@ export default function ProductsPage() {
       img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/55D26L%E4%BB%B0-scaled-1.webp',
       cca: '450–600 A',
       weight: '5 ± 0.5 kg',
-      fits: 'Proton X90 · Nissan Serena · MPV variants',
-      fitsIcon: 'fa-car',
+   
     },
   ]
 
@@ -52,8 +48,7 @@ export default function ProductsPage() {
       img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/12/L2-400L.226-scaled-1-e1767061886724.webp',
       cca: '450–600 A',
       weight: '4.5 ± 0.5 kg',
-      fits: 'Proton X50, X70 · Honda Civic, CR-V · Mazda CX-5 · VW Tiguan',
-      fitsIcon: 'fa-car',
+    
       popular: true,
     },
     {
@@ -62,8 +57,7 @@ export default function ProductsPage() {
       img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/12/D31L-scaled-1.webp',
       cca: '650–800 A',
       weight: '6.4 ± 0.5 kg',
-      fits: 'Toyota Hilux, Fortuner · Nissan Navara · Mitsubishi Triton',
-      fitsIcon: 'fa-truck',
+      
     },
     
     
@@ -82,7 +76,7 @@ export default function ProductsPage() {
           <div className="page-hero-content">
             <nav className="breadcrumb"><Link href="/">Home</Link><span>/</span><span className="current">Products</span></nav>
             <h1>Our Products</h1>
-            <p>9 sodium-ion battery models engineered to fit every vehicle — from city hatchbacks to heavy-duty trucks.</p>
+            <p>6 sodium-ion battery models engineered to fit every vehicle — from city hatchbacks to heavy-duty trucks.</p>
           </div>
         </div>
       </section>
@@ -140,7 +134,7 @@ export default function ProductsPage() {
                     <li><span className="spec-label">Warranty</span><span className="spec-value" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</span></li>
                   </ul>
                   <div className="product-card-footer">
-                    <p style={{ fontSize: '.8125rem', color: 'var(--text-muted)', marginBottom: '.75rem' }}><i className={`fas ${p.fitsIcon}`} style={{ color: 'var(--accent)', marginRight: '.375rem' }}></i>Fits: {p.fits}</p>
+                    
                     <div style={{ display: 'flex', gap: '.625rem' }}>
                       <Link href="/battery-finder" className="btn btn-primary btn-sm" style={{ flex: 1, justifyContent: 'center' }}>Buy Now</Link>
                       <Link href="/retail-partners" className="btn btn-outline-dark btn-sm" style={{ flex: 1, justifyContent: 'center' }}>Find Dealer</Link>
@@ -171,7 +165,7 @@ export default function ProductsPage() {
                     <li><span className="spec-label">Warranty</span><span className="spec-value" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</span></li>
                   </ul>
                   <div className="product-card-footer">
-                    <p style={{ fontSize: '.8125rem', color: 'var(--text-muted)', marginBottom: '.75rem' }}><i className={`fas ${p.fitsIcon}`} style={{ color: 'var(--accent)', marginRight: '.375rem' }}></i>Fits: {p.fits}</p>
+          
                     <div style={{ display: 'flex', gap: '.625rem' }}>
                       <Link href="/battery-finder" className="btn btn-primary btn-sm" style={{ flex: 1, justifyContent: 'center' }}>Buy Now</Link>
                       <Link href="/retail-partners" className="btn btn-outline-dark btn-sm" style={{ flex: 1, justifyContent: 'center' }}>Find Dealer</Link>
