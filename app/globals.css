@@ -162,15 +162,15 @@ p  { line-height: 1.7; }
 .btn-lg { padding: 1rem 2.5rem; font-size: 1.0625rem; }
 
 /* 7. HERO */
-.hero { position: relative; min-height: calc(100vh - var(--nav-height)); display: flex; align-items: center; overflow: hidden; }
+.hero {position: relative;min-height: calc(100vh - var(--nav-height));display: flex;align-items: center;overflow: visible;}
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 0; }
 .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, rgba(11,30,61,.93) 0%, rgba(11,30,61,.62) 55%, rgba(11,30,61,.22) 100%); }
-.hero-content { position: relative; z-index: 1; max-width: 700px; }
+.hero-content { position: relative; z-index: 1000; max-width: 700px; }
 .hero-label { display: inline-block; background: rgba(232,119,34,.18); color: var(--accent-light); border: 1px solid rgba(232,119,34,.38); padding: .375rem 1rem; border-radius: var(--radius-full); font-size: .8125rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.5rem; }
 .hero h1 { color: var(--white); font-weight: 900; line-height: 1.1; margin-bottom: 1.25rem; }
 .hero h1 span { color: var(--accent); }
 .hero > div > p { color: rgba(255,255,255,.8); font-size: 1.125rem; margin-bottom: 2.5rem; max-width: 540px; }
-.hero .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero .hero-cta {display: flex; gap: 1rem; flex-wrap: wrap; position: relative;z-index: 101;}
 
 .page-hero { position: relative; padding: 5rem 0 4rem; background: var(--primary); overflow: hidden; }
 .page-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: .18; }
@@ -416,4 +416,42 @@ select.form-control { cursor: pointer; appearance: none; background-image: url("
   .partner-grid { grid-template-columns: 1fr; }
   /* Stats 3-col goes single column on very small screens */
   .stats-grid.stats-3 { grid-template-columns: 1fr; }
+}
+/* Contact Dropdown */
+.contact-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 99999;
+}
+
+.contact-menu {
+  display: none;
+
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+
+  width: 240px;
+
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.25);
+
+  overflow: hidden;
+
+  z-index: 999999;
+}
+
+.contact-menu a {
+  display: block;
+  padding: 14px 18px;
+  color: #333;
+}
+
+.contact-menu a:hover {
+  background: #f5f5f5;
+}
+
+.contact-dropdown:hover .contact-menu {
+  display: block;
 }

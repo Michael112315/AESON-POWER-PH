@@ -12,14 +12,33 @@ export default function HomePage() {
             <h1>Redesigning the <span>Road Ahead,</span> Powered By Sodium-ion</h1>
             <p style={{ color: 'rgba(255,255,255,.8)', marginBottom: '2rem' }}>Experience safety, efficiency, and confidence with the Philippines&apos; most advanced automotive battery — backed by a 30-month warranty.</p>
             <div className="hero-cta">
-  <a
-  href="viber://chat?number=%2B639273179178"
-  className="btn btn-lg btn-viber"
- 
->
-  <i className="fab fa-viber"></i>
-  Chat with Sales
-</a>
+
+
+              <div className="contact-dropdown">
+  <button className="btn btn-lg btn-viber contact-btn">
+    <i className="fas fa-comments"></i> Chat with Sales ▼
+  </button>
+
+  <div className="contact-menu">
+    <a href="https://www.facebook.com/aeson.power.philippines" target="_blank" rel="noopener noreferrer">
+      💬 Messenger
+    </a>
+
+    <a href="viber://chat?number=%2B639273179178">
+      📞 Viber
+    </a>
+
+    <a href="https://wa.me/639273179178" target="_blank" rel="noopener noreferrer">
+      🟢 WhatsApp
+    </a>
+
+    <a href="mailto:sales@aesonpower.com.ph">
+      ✉️ Email
+    </a>
+  </div>
+</div>
+
+
               <Link href="/products" className="btn btn-outline btn-lg">View Products</Link>
             </div>
           </div>
