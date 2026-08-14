@@ -23,6 +23,23 @@ export default function ProductsPage() {
       weight: '4.5 ± 0.5 kg',
      
     },
+         {
+      model: 'NA-NS60L',
+      designation: '55D23L / NS50 Designation',
+      img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/55D23L%E4%BB%B0-scaled-1.webp',
+      cca: '450–600 A',
+      weight: '4.5 ± 0.5 kg',
+     
+    },
+
+    {
+      model: 'NA-NS40L',
+      designation: '55D23L / NS50 Designation',
+      img: 'https://cms.aesonpower.com.my/wp-content/uploads/2025/08/55D23L%E4%BB%B0-scaled-1.webp',
+      cca: '450–600 A',
+      weight: '4.5 ± 0.5 kg',
+     
+    },
     {
       model: 'NA-60B24L',
       designation: 'NS60 Designation',
@@ -59,7 +76,35 @@ export default function ProductsPage() {
       weight: '6.4 ± 0.5 kg',
       
     },
+    {
+      model: 'H5/LN2',
+      designation: '95D31L / NX120-7L Designation',
+      img: 'https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-14-2026-01_50_53-PM.png',
+      cca: '650-800 A',
+      weight: '6.4 ± 0.5 kg',
+      warranty: '36 Months',
+      
+    },
+      {
+      model: 'H6/LN3',
+      designation: '95D31L / NX120-7L Designation',
+      img: 'https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-14-2026-01_50_53-PM.png',
+      cca: '650–800 A',
+      weight: '6.4 ± 0.5 kg',
+      warranty: '36 Months',
+      
+    },
+    {
+      model: 'H6/LN3 PRO',
+      designation: '95D31L / NX120-7L Designation',
+      img: 'https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-14-2026-01_50_53-PM.png',
+      cca: '650–800 A',
+      weight: '6.4 ± 0.5 kg',
+      warranty: '36 Months',
+      
+    },
     
+   
     
    
   ]
@@ -131,7 +176,19 @@ export default function ProductsPage() {
                     <li><span className="spec-label">Weight</span><span className="spec-value">{p.weight}</span></li>
                     <li><span className="spec-label">Charge Voltage</span><span className="spec-value">14.4–14.8 V</span></li>
                     <li><span className="spec-label">Terminal</span><span className="spec-value">SAE AP</span></li>
-                    <li><span className="spec-label">Warranty</span><span className="spec-value" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</span></li>
+                    {/*<li><span className="spec-label">Warranty</span><span className="spec-value" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</span></li>*/}
+                                          <li>
+  <span className="spec-label">Warranty</span>
+  <span
+    className="spec-value"
+    style={{ color: 'var(--accent)', fontWeight: 700 }}
+  >
+    {p.model?.trim().toUpperCase() === 'NA-NS60L'
+      ? '36 Months'
+      : '30 Months'}
+  </span>
+</li>
+   
                   </ul>
                   <div className="product-card-footer">
                     
@@ -162,7 +219,18 @@ export default function ProductsPage() {
                     <li><span className="spec-label">Weight</span><span className="spec-value">{p.weight}</span></li>
                     <li><span className="spec-label">Charge Voltage</span><span className="spec-value">14.4–14.8 V</span></li>
                     <li><span className="spec-label">Terminal</span><span className="spec-value">SAE AP</span></li>
-                    <li><span className="spec-label">Warranty</span><span className="spec-value" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</span></li>
+                    {/*<li><span className="spec-label">Warranty</span><span className="spec-value" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</span></li>*/}
+                          <li>
+  <span className="spec-label">Warranty</span>
+  <span
+    className="spec-value"
+    style={{ color: 'var(--accent)', fontWeight: 700 }}
+  >
+    {p.model?.trim().toUpperCase() === 'H6/LN3 PRO'
+      ? '36 Months'
+      : '30 Months'}
+  </span>
+</li>
                   </ul>
                   <div className="product-card-footer">
           
@@ -202,13 +270,14 @@ export default function ProductsPage() {
               <tbody>
                 <tr><td><strong>NA-40B20L</strong></td><td>NS40</td><td>350–450 A</td><td>4 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
                 <tr><td><strong>NA-NS50L</strong></td><td>55D23L / NS50</td><td>450–600 A</td><td>4.5 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
+                 <tr><td><strong>NA-NS60L</strong></td><td>55D23L / NS50</td><td>450–600 A</td><td>4.5 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>36 Months</td></tr>
                 <tr><td><strong>NA-60B24L</strong></td><td>NS60</td><td>370–500 A</td><td>4.2 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
                 <tr><td><strong>NA-NS70L</strong></td><td>NS70</td><td>450–600 A</td><td>5 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
                 <tr style={{ background: 'rgba(232,119,34,.04)' }}><td><strong>H5 / L2-400L</strong> ⭐</td><td>DIN55L</td><td>450–600 A</td><td>4.5 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
-                <tr><td><strong>D31L</strong></td><td>95D31L / NX120-7L</td><td>650–800 A</td><td>6.4 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
-               {/* <tr><td><strong>M42L</strong></td><td>M42L</td><td>520–600 A</td><td>5.1 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
-                <tr><td><strong>Q85L-SS</strong></td><td>Q85</td><td>650–800 A</td><td>6 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
-                <tr><td><strong>S95L-SS</strong></td><td>S95</td><td>720–850 A</td><td>7 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>*/}
+                <tr><td><strong>D31L</strong></td><td>95D31L / NX120-7L</td><td>650–800 A</td><td>6.4 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>36 Months</td></tr>
+                <tr><td><strong>H5/LN2</strong></td><td>H5/LN2</td><td>520–600 A</td><td>6.4 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
+                <tr><td><strong>H6/LN3</strong></td><td>H6/LN3</td><td>650–800 A</td><td>6 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>30 Months</td></tr>
+                <tr><td><strong>H6/LN3 PRO</strong></td><td>H6/LN3 PRO</td><td>720–850 A</td><td>7 ± 0.5 kg</td><td>14.4–14.8 V</td><td>SAE AP</td><td className="highlight-col" style={{ color: 'var(--accent)', fontWeight: 700 }}>36 Months</td></tr>
               </tbody>
             </table>
           </div>
