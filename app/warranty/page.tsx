@@ -165,14 +165,16 @@ export default function WarrantyPage() {
                       <select id="battery-model" name="battery_model" className="form-control" required>
                         <option value="">Select battery model</option>
                         <option>NA-40B20L (NS40)</option>
+                        <option>NA-NS60L</option>
                         <option>NA-NS50L (55D23L/NS50)</option>
                         <option>NA-60B24L (NS60)</option>
                         <option>NA-NS70L (NS70)</option>
                         <option>H5/L2-400L (DIN55L)</option>
                         <option>D31L (95D31L/NX120-7L)</option>
                         <option>M42L</option>
-                        <option>Q85L-SS (Q85)</option>
-                        <option>S95L-SS (S95)</option>
+                        <option>H5/LN2</option>
+                        <option>H6/LN3</option>
+                        <option>H6/LN3 PRO</option>
                       </select>
                     </div>
                     <div className="form-group">
