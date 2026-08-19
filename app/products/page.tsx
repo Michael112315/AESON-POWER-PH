@@ -103,6 +103,24 @@ export default function ProductsPage() {
       warranty: '36 Months',
       
     },
+    {
+      model: 'H7/LN4',
+      designation: '95D31L / NX120-7L Designation',
+      img: 'https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-14-2026-01_50_53-PM.png',
+      cca: '650–800 A',
+      weight: '6.4 ± 0.5 kg',
+      warranty: '30 Months',
+      
+    },
+     {
+      model: 'H8/LN5',
+      designation: '95D31L / NX120-7L Designation',
+      img: 'https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-14-2026-01_50_53-PM.png',
+      cca: '650–800 A',
+      weight: '6.4 ± 0.5 kg',
+      warranty: '30 Months',
+      
+    },
     
    
     

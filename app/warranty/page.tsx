@@ -175,6 +175,8 @@ export default function WarrantyPage() {
                         <option>H5/LN2</option>
                         <option>H6/LN3</option>
                         <option>H6/LN3 PRO</option>
+                        <option>H7/LN4</option>
+                        <option>H8/LN5</option>
                       </select>
                     </div>
                     <div className="form-group">
