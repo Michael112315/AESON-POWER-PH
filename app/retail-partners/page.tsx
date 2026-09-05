@@ -9,7 +9,7 @@ const dealers = [
   {
      city: "Bacolod",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
     name: "Better Batteries Bacolod",
     address:
@@ -20,7 +20,7 @@ const dealers = [
  {
      city: "Cebu",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Cebucity.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
     name: "Savers Battery Supply",
     address:
@@ -31,7 +31,7 @@ const dealers = [
   {
    city: "Iloilo",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
     name: "Ilo-Ilo Auto Supply",
     address:
@@ -41,7 +41,7 @@ const dealers = [
   {
     city: "Roxas",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
     name: "One Auto Supply",
     address:
@@ -51,7 +51,7 @@ const dealers = [
   {
      city: "Tacloban",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
-    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
     name: "Jas Auto Parts Gen. Merchandise",
     address:
