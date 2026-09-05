@@ -21,7 +21,7 @@ const dealers = [
      city: "Cebu",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Cebucity.webp",
     logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
-    stores: 1,
+    stores: 8,
     name: "Savers Battery Supply",
     address:
       "Poblacion, Lapu2x City, Cebu",
