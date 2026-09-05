@@ -9,17 +9,29 @@ const dealers = [
   {
      city: "Bacolod",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Retail-partners-bacolod-1-scaled.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Kenpro-Logo-.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
     stores: 1,
-    name: "KENPRO / BETTER BATTERIES BACOLOD",
+    name: "Better Batteries Bacolod",
     address:
       "MW3R+4WV, Magsaysay Ave, Bacolod, 6100 Negros Occidental",
     phone: "+639273179178",
   },
+
+ {
+     city: "Cebu",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Cebucity.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
+    stores: 1,
+    name: "Savers Battery Supply",
+    address:
+      "Poblacion, Lapu2x City, Cebu",
+    phone: "+639177775776",
+  },
+
   {
    city: "Iloilo",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
     stores: 1,
     name: "Ilo-Ilo Auto Supply",
     address:
@@ -29,7 +41,7 @@ const dealers = [
   {
     city: "Roxas",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
     stores: 1,
     name: "One Auto Supply",
     address:
@@ -39,7 +51,7 @@ const dealers = [
   {
      city: "Tacloban",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/Tacloban.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-15-2026-11_03_42-AM.webp",
+    logo: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile.webp",
     stores: 1,
     name: "Jas Auto Parts Gen. Merchandise",
     address:
@@ -301,31 +313,33 @@ export default function RetailPartnersPage() {
 
     {/* Store Icon */}
     <div
-      style={{
-      width: "90px",
-      height: "90px",
-      margin: "-45px auto 20px",
-      borderRadius: "50%",
-      background: "#fff",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      position: "relative",
-      boxShadow: "0 8px 20px rgba(0,0,0,.15)",
-      overflow: "hidden",
-      }}
-    >
-       <img
-       src={dealer.logo}
-       alt={dealer.name}
-       style={{
-       width: "75%",
-       height: "75%",
-       objectFit: "contain",
+  style={{
+    width: "110px",
+    height: "110px",
+    margin: "-55px auto 20px",
+    borderRadius: "50%",
+    background: "#fff",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
+    boxShadow: "0 8px 20px rgba(0,0,0,.15)",
+    overflow: "hidden",
+  }}
+>
+  <img
+    src={dealer.logo}
+    alt={dealer.name}
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "contain",
+      objectPosition: "center",
+      display: "block",
+       background: "#000",
     }}
   />
-      
-    </div>
+</div>
 
     <div
       style={{
