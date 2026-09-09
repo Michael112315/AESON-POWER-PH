@@ -1,5 +1,8 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
+
+import type { Metadata } from "next";
+import Link from "next/link";
+import CebuBranches from "./CebuBranches";
+
 
 export const metadata: Metadata = {
   title: 'Retail Partners',
@@ -17,16 +20,63 @@ const dealers = [
     phone: "+639273179178",
   },
 
- {
-     city: "Cebu",
-    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Cebucity.webp",
-    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
-    stores: 8,
-    name: "Savers Battery Supply",
-    address:
-      "Poblacion, Lapu2x City, Cebu",
-    phone: "+639177775776",
-  },
+{
+  city: "Cebu",
+  cityImage:
+    "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Cebucity.webp",
+  logo:
+    "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+  stores: 8,
+
+  name: "Savers Battery Supply",
+  address: "Poblacion, Lapu2x City, Cebu",
+  phone: "+639177775776",
+
+  branches: [
+    {
+      name: "Savers Tire Supply Awayan",
+      address: "Highway Awayan, Carcar, Cebu",
+      phone: "",
+      facebook: "",
+    },
+    {
+      name: "Savers Tire Supply Perrelos",
+      address: "Highway Perrelos, Carcar, Cebu",
+      phone: "",
+      facebook: "",
+    },
+    {
+      name: "Savers Tire Supply Tunghaan",
+      address: "Highway Tunghaan, Minglanilla, Cebu",
+      phone: "",
+      facebook: "",
+    },
+    {
+      name: "Savers Tire Supply Calajoan",
+      address: "Highway Calajoan, Minglanilla, Cebu",
+      phone: "",
+      facebook: "",
+    },
+    {
+      name: "Jersal Tire Supply Minglanilla",
+      address: "Highway Pakigne, Minglanilla, Cebu",
+      phone: "",
+      facebook: "",
+    },
+    {
+      name: "Savers Tire Supply Liloan",
+      address: "Highway Tayud, Liloan, Cebu",
+      phone: "",
+      facebook: "",
+    },
+    {
+      name: "Savers Tire Supply Danao",
+      address: "Highway Sabang, Danao City, Cebu",
+      phone: "",
+      facebook: "",
+    },
+  ],
+},
 
   {
    city: "Iloilo",
@@ -61,6 +111,7 @@ const dealers = [
 ]
 
 export default function RetailPartnersPage() {
+
   return (
     <>
       {/* Hero */}
@@ -340,6 +391,20 @@ export default function RetailPartnersPage() {
     }}
   />
 </div>
+ {dealer.city === "Cebu" && dealer.branches ? (
+  <CebuBranches
+    mainBranch={{
+      name: dealer.name,
+      address: dealer.address,
+      phone: dealer.phone,
+    }}
+    branches={dealer.branches}
+  />
+) : (
+
+
+
+
 
     <div
       style={{
@@ -436,7 +501,7 @@ export default function RetailPartnersPage() {
     WhatsApp
   </a>
 
-  <a
+    <a
     href={`viber://chat?number=${dealer.phone}`}
     style={{
       background: "#7360F2",
@@ -454,10 +519,16 @@ export default function RetailPartnersPage() {
     <i className="fab fa-viber"></i>
     Viber
   </a>
+
 </div>
-    </div>
-  </div>
-))} 
+
+</div>
+
+)}
+
+</div>
+
+))}
            
           </div>
 
