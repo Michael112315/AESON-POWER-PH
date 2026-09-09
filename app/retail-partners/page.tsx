@@ -20,6 +20,17 @@ const dealers = [
     phone: "+639273179178",
   },
 
+   {
+     city: "Bohol",
+    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-02_31_34-PM.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 2,
+    name: "Rensal Tire Supply",
+    address:
+      "Highway CPG, Taloto District, Tagbilaran City, Bohol",
+    phone: "+639778353757",
+  },
+
 {
   city: "Cebu",
   cityImage:
@@ -77,6 +88,18 @@ const dealers = [
     },
   ],
 },
+
+{
+   city: "Laguna",
+    cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/laguna.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 1,
+    name: "Makarios Builders Depot",
+    address:
+      "Nuvali, Sta. Rosa, Laguna, Philippines",
+    phone: "+639177816410",
+  },
+
 
   {
    city: "Iloilo",
