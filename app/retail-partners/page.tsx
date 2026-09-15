@@ -16,7 +16,7 @@ const dealers = [
     stores: 1,
     name: "Better Batteries Bacolod",
     address:
-      "MW3R+4WV, Magsaysay Ave, Bacolod, 6100 Negros Occidental",
+      " Magsaysay Ave Bacolod 6100 Negros Occidental Bacolod City Philippines",
     phone: "+639273179178",
   },
 
@@ -27,7 +27,7 @@ const dealers = [
     stores: 2,
     name: "Rensal Tire Supply",
     address:
-      "Highway CPG, Taloto District, Tagbilaran City, Bohol",
+      "Highway CPG Taloto District Tagbilaran City Bohol Philippines",
     phone: "+639778353757",
   },
 
@@ -40,49 +40,49 @@ const dealers = [
   stores: 8,
 
   name: "Savers Battery Supply",
-  address: "Poblacion, Lapu2x City, Cebu",
+  address: "Poblacion Lapu2x City Cebu Philippines",
   phone: "+639177775776",
 
   branches: [
     {
       name: "Savers Tire Supply Awayan",
-      address: "Highway Awayan, Carcar, Cebu",
+      address: "Highway Awayan Carcar Cebu Philippines",
       phone: "",
       facebook: "",
     },
     {
       name: "Savers Tire Supply Perrelos",
-      address: "Highway Perrelos, Carcar, Cebu",
+      address: "Highway Perrelos Carcar Cebu Philippines",
       phone: "",
       facebook: "",
     },
     {
       name: "Savers Tire Supply Tunghaan",
-      address: "Highway Tunghaan, Minglanilla, Cebu",
+      address: "Highway Tunghaan Minglanilla Cebu Philippines",
       phone: "",
       facebook: "",
     },
     {
       name: "Savers Tire Supply Calajoan",
-      address: "Highway Calajoan, Minglanilla, Cebu",
+      address: "Highway Calajoan Minglanilla Cebu Philippines",
       phone: "",
       facebook: "",
     },
     {
       name: "Jersal Tire Supply Minglanilla",
-      address: "Highway Pakigne, Minglanilla, Cebu",
+      address: "Highway Pakigne Minglanilla Cebu Philippines",
       phone: "",
       facebook: "",
     },
     {
       name: "Savers Tire Supply Liloan",
-      address: "Highway Tayud, Liloan, Cebu",
+      address: "Highway Tayud Liloan Cebu Philippines",
       phone: "",
       facebook: "",
     },
     {
       name: "Savers Tire Supply Danao",
-      address: "Highway Sabang, Danao City, Cebu",
+      address: "Highway Sabang Danao City Cebu Philippines",
       phone: "",
       facebook: "",
     },
@@ -96,7 +96,7 @@ const dealers = [
     stores: 1,
     name: "Makarios Builders Depot",
     address:
-      "Nuvali, Sta. Rosa, Laguna, Philippines",
+      "Nuvali, Sta.Rosa Laguna Philippines",
     phone: "+639177816410",
   },
 
@@ -108,9 +108,22 @@ const dealers = [
     stores: 1,
     name: "Ilo-Ilo Auto Supply",
     address:
-      "Corner Ledesma Street, Valeria Street, Iloilo City, Iloilo, Philippines",
+      "Corner Ledesma Street Valeria Street Iloilo City Iloilo Philippines",
     phone: "+639173030300",
   },
+{
+    city: "Olongapo",
+    cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-01_26_58-PM.webp",
+    logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 1,
+    name: "Add Garbes Servitek",
+    address:
+      "# 9 CBMU Upper Kalaklan Olongapo City Zambales Philippines",
+    phone: "+639175906552",
+  },
+
+
+
   {
     city: "Roxas",
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/IMG_8648.webp",
@@ -118,7 +131,7 @@ const dealers = [
     stores: 1,
     name: "One Auto Supply",
     address:
-      "Brgy. Banica, Roxas City 5800, Philippines",
+      "Brgy. Banica Roxas City Philippines",
     phone: "+639189442470",
   },
   {
@@ -128,7 +141,7 @@ const dealers = [
     stores: 1,
     name: "Jas Auto Parts Gen. Merchandise",
     address:
-      "Door 13-14 Village Center Building, Avenida Veteranos, Tacloban City",
+      "Door 13-14 Village Center Building Avenida Veteranos Tacloban City Leyte Philippines",
     phone: "+639175978223",
   },
 ]
