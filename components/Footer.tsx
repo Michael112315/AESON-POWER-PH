@@ -29,7 +29,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/products">Products</Link></li>
-              <li><Link href="/battery-finder">Battery Finder</Link></li>
+            {/*  <li><Link href="/battery-finder">Battery Finder</Link></li> */}
               <li><Link href="/technology">Technology</Link></li>
               <li><Link href="/news">News</Link></li>
             </ul>
@@ -40,7 +40,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/warranty">Warranty Registration</Link></li>
               <li><Link href="/retail-partners">Retail Partners</Link></li>
-              <li><Link href="/roadside-assistance">Roadside Assistance</Link></li>
+              {/* <li><Link href="/roadside-assistance">Roadside Assistance</Link></li>*/}
               <li><Link href="/faq">Support &amp; FAQs</Link></li>
             </ul>
           </div>

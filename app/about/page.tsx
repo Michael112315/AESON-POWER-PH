@@ -197,7 +197,7 @@ export default function AboutPage() {
             <p>Find the right Aeson Power sodium-ion battery for your vehicle and join thousands of satisfied Philippine drivers.</p>
             <div className="btn-group">
               <Link href="/products" className="btn btn-primary btn-lg">Explore Products</Link>
-              <Link href="/battery-finder" className="btn btn-outline btn-lg">Find My Battery</Link>
+        {/*     <Link href="/battery-finder" className="btn btn-outline btn-lg">Find My Battery</Link> */}
             </div>
           </div>
         </div>

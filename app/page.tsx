@@ -334,7 +334,7 @@ export default function HomePage() {
             <h2>Switch to Sodium-Ion Today</h2>
             <p>Find your compatible battery, locate a dealer near you, or register your warranty — all in a few clicks.</p>
             <div className="btn-group">
-              <Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find My Battery</Link>
+         {/*     <Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find My Battery</Link> */}
               <Link href="/retail-partners" className="btn btn-outline btn-lg"><i className="fas fa-map-marker-alt"></i> Find a Dealer</Link>
             </div>
           </div>

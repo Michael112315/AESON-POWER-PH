@@ -52,7 +52,7 @@ export default function Navbar() {
             </a>
             <ul className="nav-dropdown-menu">
               <li><Link href="/products" onClick={() => setMenuOpen(false)}>All Products</Link></li>
-              <li><Link href="/battery-finder" onClick={() => setMenuOpen(false)}>Battery Finder</Link></li>
+             {/* } <li><Link href="/battery-finder" onClick={() => setMenuOpen(false)}>Battery Finder</Link></li> */}
               <li><Link href="/technology" onClick={() => setMenuOpen(false)}>Technology Overview</Link></li>
             </ul>
           </li>

@@ -222,7 +222,7 @@ export default function TechnologyPage() {
             <h2>Ready to Upgrade Your Vehicle?</h2>
             <p>Find the right Aeson Power sodium-ion battery for your car and switch to better performance today.</p>
             <div className="btn-group">
-              <Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find My Battery</Link>
+         {/*     <Link href="/battery-finder" className="btn btn-primary btn-lg"><i className="fas fa-search"></i> Find My Battery</Link> */}
               <Link href="/products" className="btn btn-outline btn-lg">View All Products</Link>
             </div>
           </div>

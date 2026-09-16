@@ -106,7 +106,7 @@ const dealers = [
     cityImage: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/07/iloilo-scaled.webp",
     logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
-    name: "Ilo-Ilo Auto Supply",
+    name: "ILOILO Auto Supply",
     address:
       "Corner Ledesma Street Valeria Street Iloilo City Iloilo Philippines",
     phone: "+639173030300",
@@ -116,7 +116,7 @@ const dealers = [
     cityImage: "https://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-01_26_58-PM.webp",
     logo: "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
-    name: "Add Garbes Servitek",
+    name: "ADD Garbes Servitek",
     address:
       "# 9 CBMU Upper Kalaklan Olongapo City Zambales Philippines",
     phone: "+639175906552",
