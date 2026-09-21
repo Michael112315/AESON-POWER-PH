@@ -178,7 +178,7 @@ export default function ProductsPage() {
            /* <button className={`btn ${activeTab === 'naforce' ? 'btn-primary' : 'btn-outline-dark'} btn-sm`} onClick={() => setActiveTab('naforce')}>NaForce Series</button>*/}
           </div>
 
-          <div className="grid-3 reveal">
+          <div className="grid-3">
             {visibleNaPulse && napulseProducts.map((p) => (
               <div key={p.model} className="product-card">
                 <div className="product-card-img">
@@ -310,7 +310,7 @@ export default function ProductsPage() {
             <h2 className="section-title">Where to Buy</h2>
             <p className="section-subtitle">Available through our authorised retail partners across the Philippines, as well as online marketplaces.</p>
           </div>
-          <div className="grid-3 reveal">
+          <div className="grid-3">
             <div className="feature-card" style={{ textAlign: 'center' }}>
               <div className="feature-icon" style={{ margin: '0 auto 1rem' }}><i className="fas fa-store"></i></div>
               <h3>Authorised Dealers</h3>
