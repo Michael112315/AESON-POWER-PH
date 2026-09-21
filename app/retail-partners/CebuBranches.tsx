@@ -48,36 +48,63 @@ export default function CebuBranches({
           STORE NAME
       ========================================= */}
 
-      <div
+     <div
+  style={{
+    textAlign: "center",
+    marginBottom: "18px",
+  }}
+>
+  <h3
+    style={{
+      margin: "0 0 5px",
+      fontSize: "22px",
+      fontWeight: 700,
+      color: "#102A56",
+    }}
+  >
+    Savers Battery Supply
+  </h3>
+
+  <p
+    style={{
+      margin: 0,
+      color: "#777",
+      fontSize: "13px",
+    }}
+  >
+    Select a branch to view details
+  </p>
+
+  {/* MAIN PHONE NUMBER */}
+  {mainBranch.phone && (
+    <a
+      href={`tel:${mainBranch.phone}`}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "8px",
+        background: "transparent",
+        color: "#102A56",
+        padding: "9px 24px",
+        marginTop: "8px",
+        textDecoration: "none",
+        fontSize: "13px",
+        fontWeight: 600,
+      }}
+    >
+      <i
+        className="fas fa-phone"
         style={{
-          textAlign: "center",
-          marginBottom: "18px",
+          color: "#E87722",
+          fontSize: "15px",
         }}
-      >
+      />
 
-        <h3
-          style={{
-            margin: "0 0 5px",
-            fontSize: "22px",
-            fontWeight: 700,
-            color: "#102A56",
-          }}
-        >
-          Savers Battery Supply
-        </h3>
-
-        <p
-          style={{
-            margin: 0,
-            color: "#777",
-            fontSize: "13px",
-          }}
-        >
-          Select a branch to view details
-        </p>
-
-      </div>
-
+      {mainBranch.phone}
+    </a>
+  )}
+</div>
 
       {/* =====================================================
           FIRST DROPDOWN
