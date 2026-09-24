@@ -95,7 +95,7 @@ const dealers = [
     logo:
       "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
     stores: 1,
-    name: "Makarios Builders Depot",
+    name: "Aeson Power Batteries Southern Luzon",
     address: "Nuvali, Sta.Rosa Laguna Philippines",
     phone: "+639177816410",
   },
