@@ -126,6 +126,18 @@ const dealers = [
     phone: "+639175906552",
   },
 
+   {
+    city: "Dumaguete",
+    cityImage:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/fd6bbdae-583b-4cfe-87ff-8ce0c43910a1-1.webp",
+    logo:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 1,
+    name: "POWERSWING",
+    address:"LTO Compound EJ Blanco Drive Extension Dumaguete City Philippines",
+    phone: "+639695291458",
+  },
+
   {
     city: "Roxas",
     cityImage:
@@ -757,6 +769,7 @@ export default function RetailPartnersPage() {
                   "Bacolod",
                   "Bohol",
                   "Cebu",
+                  "Dumaguete",
                   "Iloilo",
                   "Roxas",
                   "Tacloban",

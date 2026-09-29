@@ -29,6 +29,7 @@ export default function IslandDealerGrid({ dealers }: Props) {
       "Iloilo",
       "Roxas",
       "Tacloban",
+      "Dumaguete",
     ],
     MINDANAO: [],
   };
