@@ -162,6 +162,52 @@ const dealers = [
       "Door 13-14 Village Center Building Avenida Veteranos Tacloban City Leyte Philippines",
     phone: "+639175978223",
   },
+
+  // MINDANAO DEALERS
+
+ {
+    city: "Davao City",
+    // Replace this with a Davao-specific city/store image when available.
+    cityImage:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/10/davao.webp",
+    logo:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 1,
+    name: "Wheels Doctor Service Center",
+    address:
+      "Nicasio Torres corner Vinzon Street, Barrio Obrero, Davao City",
+    phone: "+639055391059", // No phone number was provided.
+  },
+
+
+
+  {
+    city: "Kidapawan",
+    // Replace this with a Kidapawan-specific city/store image when available.
+    cityImage:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/10/kidapawan-scaled.webp",
+    logo:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 1,
+    name: "Autohaven Performance Center",
+    address:
+      "Quezon Boulevard, Kidapawan City, North Cotabato",
+    phone: "+639437024277",
+  },
+  {
+    city: "Tagum",  
+    // Replace this with a Tagum-specific city/store image when available.
+    cityImage:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/10/tagum.webp",
+    logo:
+      "http://maroon-partridge-424184.hostingersite.com/wp-content/uploads/2026/09/Store-Profile-1.webp",
+    stores: 1,
+    name: "Autohaven Performance Center",
+    address:
+      "Purok 1-A National Hi-way, Apokon Road, Tagum City, Davao del Norte",
+    phone: "+639061138383",
+  },
+ 
 ];
 
 export default function RetailPartnersPage() {
@@ -673,22 +719,24 @@ export default function RetailPartnersPage() {
                       {dealer.address}
                     </p>
 
-                    <p
-                      style={{
-                        fontWeight: 600,
-                        fontSize: "14px",
-                        margin: "0 0 18px",
-                      }}
-                    >
-                      <i
-                        className="fas fa-phone"
+                    {dealer.phone && (
+                      <p
                         style={{
-                          color: "#E87722",
-                          marginRight: "5px",
+                          fontWeight: 600,
+                          fontSize: "14px",
+                          margin: "0 0 18px",
                         }}
-                      />
-                      {dealer.phone}
-                    </p>
+                      >
+                        <i
+                          className="fas fa-phone"
+                          style={{
+                            color: "#E87722",
+                            marginRight: "5px",
+                          }}
+                        />
+                        {dealer.phone}
+                      </p>
+                    )}
 
                     {/* BUTTONS */}
 
@@ -719,37 +767,41 @@ export default function RetailPartnersPage() {
                         <i className="fas fa-map-marker-alt" /> Map
                       </a>
 
-                      <a
-                        href={`https://wa.me/${dealer.phone.replace("+", "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          background: "#25D366",
-                          color: "#fff",
-                          padding: "10px 14px",
-                          borderRadius: "8px",
-                          textDecoration: "none",
-                          fontSize: "12px",
-                          fontWeight: 600,
-                        }}
-                      >
-                        <i className="fab fa-whatsapp" /> WhatsApp
-                      </a>
+                      {dealer.phone && (
+                        <>
+                          <a
+                            href={`https://wa.me/${dealer.phone.replace("+", "")}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              background: "#25D366",
+                              color: "#fff",
+                              padding: "10px 14px",
+                              borderRadius: "8px",
+                              textDecoration: "none",
+                              fontSize: "12px",
+                              fontWeight: 600,
+                            }}
+                          >
+                            <i className="fab fa-whatsapp" /> WhatsApp
+                          </a>
 
-                      <a
-                        href={`viber://chat?number=${dealer.phone}`}
-                        style={{
-                          background: "#7360F2",
-                          color: "#fff",
-                          padding: "10px 14px",
-                          borderRadius: "8px",
-                          textDecoration: "none",
-                          fontSize: "12px",
-                          fontWeight: 600,
-                        }}
-                      >
-                        <i className="fab fa-viber" /> Viber
-                      </a>
+                          <a
+                            href={`viber://chat?number=${dealer.phone}`}
+                            style={{
+                              background: "#7360F2",
+                              color: "#fff",
+                              padding: "10px 14px",
+                              borderRadius: "8px",
+                              textDecoration: "none",
+                              fontSize: "12px",
+                              fontWeight: 600,
+                            }}
+                          >
+                            <i className="fab fa-viber" /> Viber
+                          </a>
+                        </>
+                      )}
                     </div>
                   </div>
                 )}
@@ -778,7 +830,7 @@ export default function RetailPartnersPage() {
               {
                 id: "mindanao",
                 title: "MINDANAO",
-                cities: [],
+                cities: ["Kidapawan", "Tagum", "Davao City"],
               },
             ];
 
